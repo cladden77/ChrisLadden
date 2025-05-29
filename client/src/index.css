@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import Inter font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 210 9% 16%; /* #2A2A2A charcoal */
+  --muted: 210 40% 96%;
+  --muted-foreground: 215 16% 47%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 210 9% 16%;
+  --card: 0 0% 100%;
+  --card-foreground: 210 9% 16%;
+  --border: 214 32% 91%;
+  --input: 214 32% 91%;
+  --primary: 170 100% 29%; /* #0E8377 brand teal */
+  --primary-foreground: 0 0% 98%;
+  --secondary: 210 40% 96%;
+  --secondary-foreground: 210 11% 15%;
+  --accent: 210 40% 96%;
+  --accent-foreground: 210 11% 15%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 210 40% 98%;
+  --ring: 210 9% 16%;
+  --radius: 0.75rem;
+  
+  /* Custom brand colors */
+  --brand-teal: 170 100% 29%; /* #0E8377 */
+  --brand-deep-teal: 172 92% 17%; /* #04544E */
+  --brand-charcoal: 210 9% 16%; /* #2A2A2A */
+  --brand-graphite: 210 11% 24%; /* #3D3D3D */
+  --brand-light-gray: 210 14% 60%; /* #999999 */
+}
+
+.dark {
+  --background: 210 9% 16%;
+  --foreground: 0 0% 98%;
+  --muted: 210 11% 24%;
+  --muted-foreground: 215 16% 65%;
+  --popover: 210 9% 16%;
+  --popover-foreground: 0 0% 98%;
+  --card: 210 9% 16%;
+  --card-foreground: 0 0% 98%;
+  --border: 210 11% 24%;
+  --input: 210 11% 24%;
+  --primary: 170 100% 29%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 210 11% 24%;
+  --secondary-foreground: 0 0% 98%;
+  --accent: 210 11% 24%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 62% 30%;
+  --destructive-foreground: 0 0% 98%;
+  --ring: 210 11% 24%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .text-brand-teal {
+    color: hsl(var(--brand-teal));
+  }
+  
+  .text-brand-deep-teal {
+    color: hsl(var(--brand-deep-teal));
+  }
+  
+  .text-brand-charcoal {
+    color: hsl(var(--brand-charcoal));
+  }
+  
+  .text-brand-graphite {
+    color: hsl(var(--brand-graphite));
+  }
+  
+  .text-brand-light-gray {
+    color: hsl(var(--brand-light-gray));
+  }
+  
+  .bg-brand-teal {
+    background-color: hsl(var(--brand-teal));
+  }
+  
+  .bg-brand-deep-teal {
+    background-color: hsl(var(--brand-deep-teal));
+  }
+  
+  .bg-brand-charcoal {
+    background-color: hsl(var(--brand-charcoal));
+  }
+  
+  .bg-brand-graphite {
+    background-color: hsl(var(--brand-graphite));
+  }
+  
+  .bg-brand-light-gray {
+    background-color: hsl(var(--brand-light-gray));
+  }
+  
+  .border-brand-teal {
+    border-color: hsl(var(--brand-teal));
+  }
+  
+  .hover\:bg-brand-deep-teal:hover {
+    background-color: hsl(var(--brand-deep-teal));
+  }
+  
+  .hover\:text-brand-teal:hover {
+    color: hsl(var(--brand-teal));
+  }
+  
+  .hover\:text-brand-deep-teal:hover {
+    color: hsl(var(--brand-deep-teal));
+  }
+}
