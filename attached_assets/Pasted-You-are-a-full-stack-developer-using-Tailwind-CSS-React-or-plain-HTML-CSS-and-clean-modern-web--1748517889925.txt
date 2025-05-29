@@ -1,0 +1,80 @@
+You are a full-stack developer using Tailwind CSS, React (or plain HTML/CSS), and clean, modern web design practices.
+
+Build a personal freelance website for **Chris Ladden**, a creative developer blending design, strategy, and AI workflows. This should be professional, inviting, and use his custom brand identity.
+
+---
+
+🎯 Purpose: Showcase Chris’s services, build trust, and book discovery calls.
+
+🎨 Brand Style:
+- **Primary Colors (from palette):**
+  - Teal: #0E8377
+  - Deep Teal: #04544E
+  - Charcoal: #2A2A2A
+  - Graphite: #3D3D3D
+  - Light Gray: #999999
+- Background: White or very light gray
+- Text: Charcoal or Graphite (#2A2A2A / #3D3D3D)
+- Accent (buttons, highlights): Teal (#0E8377)
+- Font: Clean, sans-serif (like Inter, DM Sans, or Manrope)
+
+📛 Logo:
+- Add a placeholder for Chris’s custom black "CL" monogram logo
+- Align top-left in the navbar or header
+
+---
+
+📄 Page Structure:
+
+**Header/Nav:**
+- Left: Chris Ladden logo
+- Right: Home | Services | Work | Contact
+- Sticky nav on scroll
+
+**Hero Section:**
+- H1: “Smarter Design. Faster Launches. Real Results.”
+- Subheading: “Hi, I’m Chris Ladden—a creative developer blending strategy, design, and AI to help founders, creators, and small teams launch powerful brands and websites that perform from day one.”
+- Bullets:
+  - AI-enhanced visuals and copywriting
+  - Mobile-first, SEO-friendly, scalable websites
+  - Delivered fast—ready to launch
+- CTA Button: “Book a Free Discovery Call”  
+  (Use teal background, white text, rounded corners)
+
+**Services Section:**
+- 3 Cards: WordPress Development, React Development, Brand Design
+- Icons above text, clean grid layout
+- Button or link for more info
+
+**“My Process” Section:**
+- 3 Steps or Columns (Discovery, Design & Build, Launch & Support)
+- Use light gray background or soft shadow box
+
+**Optional “Why Work With Me” Section:**
+- Keep minimal. Include 2–3 trust-building statements or client quotes.
+- e.g., “10+ years of experience” / “Fast turnarounds” / “Clear communication from start to finish”
+
+**Contact / CTA Section:**
+- Include direct email: chris.ladden@gmail.com
+- Phone: (602) 617-6749
+- Button: “Schedule a Call” → link to Calendly (placeholder)
+
+**Footer:**
+- Social icons: Instagram, Twitter (placeholders)
+- Logo or name repeated, soft teal or dark gray
+
+---
+
+🧰 Tech Stack:
+- Tailwind CSS
+- HTML/React
+- Clean, responsive layout
+- Commented code that Chris can edit later
+- Deploy-ready: Chris will host on Vercel and connect via GitHub
+
+---
+
+📱 Mobile Optimization:
+- Responsive layout
+- Collapsible nav menu
+- Stack hero and services sections vertically
