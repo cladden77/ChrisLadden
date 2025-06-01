@@ -28,8 +28,8 @@ export default function TrustSection() {
           </h2>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-center">
+          <div className="order-2 md:order-1">
             <img 
               src="https://images.unsplash.com/photo-1559028006-448665bd7c7f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
               alt="Modern web design mockups and branding elements" 
@@ -37,7 +37,7 @@ export default function TrustSection() {
             />
           </div>
           
-          <div className="space-y-8">
+          <div className="order-1 md:order-2 space-y-6 lg:space-y-8">
             {benefits.map((benefit, index) => (
               <div key={index} className="flex items-start">
                 <div className="w-12 h-12 bg-brand-blue/10 rounded-xl flex items-center justify-center mr-4 flex-shrink-0">
@@ -46,10 +46,10 @@ export default function TrustSection() {
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-brand-charcoal mb-2">
+                  <h3 className="text-lg sm:text-xl font-semibold text-brand-charcoal mb-2">
                     {benefit.title}
                   </h3>
-                  <p className="text-brand-graphite">
+                  <p className="text-sm sm:text-base text-brand-graphite">
                     {benefit.description}
                   </p>
                 </div>

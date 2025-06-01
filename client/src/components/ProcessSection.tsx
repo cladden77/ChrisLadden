@@ -46,17 +46,17 @@ export default function ProcessSection() {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {steps.map((step, index) => (
             <div key={index} className="relative">
-              <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-all duration-300">
+              <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-sm hover:shadow-lg transition-all duration-300">
                 <div className="flex items-center mb-6">
                   <div className="w-12 h-12 bg-brand-blue rounded-full flex items-center justify-center mr-4">
                     <span className="text-white font-bold text-lg">{step.number}</span>
                   </div>
-                  <h3 className="text-xl font-semibold text-brand-charcoal">{step.title}</h3>
+                  <h3 className="text-lg sm:text-xl font-semibold text-brand-charcoal">{step.title}</h3>
                 </div>
-                <p className="text-brand-graphite mb-6 leading-relaxed">
+                <p className="text-sm sm:text-base text-brand-graphite mb-6 leading-relaxed">
                   {step.description}
                 </p>
                 <div className="space-y-3">

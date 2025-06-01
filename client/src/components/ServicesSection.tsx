@@ -65,11 +65,11 @@ export default function ServicesSection() {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-8 mt-16">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
           {services.map((service, index) => (
             <div 
               key={index}
-              className="bg-white rounded-2xl p-8 pt-16 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 relative"
+              className="bg-white rounded-2xl p-6 sm:p-8 pt-16 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 relative"
             >
               <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 w-20 h-20 bg-brand-blue rounded-2xl flex items-center justify-center shadow-lg">
                 <div className="text-3xl text-white">

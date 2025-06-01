@@ -19,12 +19,12 @@ export default function Footer() {
             <img 
               src={whiteLogo} 
               alt="Chris Ladden Logo" 
-              className="h-10 w-auto"
+              className="h-8 sm:h-10 w-auto"
             />
           </div>
           
           {/* Social Links */}
-          <div className="flex space-x-6">
+          <div className="flex space-x-4 sm:space-x-6">
             {socialLinks.map((link, index) => (
               <a 
                 key={index}
@@ -34,7 +34,9 @@ export default function Footer() {
                 aria-label={link.label}
                 className="text-gray-400 hover:text-brand-blue transition-colors duration-200"
               >
-                {link.icon}
+                <div className="w-5 h-5 sm:w-6 sm:h-6">
+                  {link.icon}
+                </div>
               </a>
             ))}
           </div>
