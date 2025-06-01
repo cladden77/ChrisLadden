@@ -1,8 +1,22 @@
-import { ArrowRight, Check } from "lucide-react";
+import { ArrowRight, Check, ChevronDown } from "lucide-react";
 
 export default function HeroSection() {
   const scrollToContact = () => {
     const element = document.getElementById("contact");
+    if (element) {
+      const offset = 80;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
+      
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+      });
+    }
+  };
+
+  const scrollToServices = () => {
+    const element = document.getElementById("services");
     if (element) {
       const offset = 80;
       const elementPosition = element.getBoundingClientRect().top;
@@ -70,6 +84,17 @@ export default function HeroSection() {
             className="w-full h-full object-cover" 
           />
         </div>
+      </div>
+      
+      {/* Scroll Down Arrow */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+        <button 
+          onClick={scrollToServices}
+          className="w-12 h-12 bg-white bg-opacity-90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg hover:bg-opacity-100 transition-all duration-300 animate-bounce"
+          aria-label="Scroll to services section"
+        >
+          <ChevronDown className="w-6 h-6 text-brand-charcoal" />
+        </button>
       </div>
     </section>
   );
