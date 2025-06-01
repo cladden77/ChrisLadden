@@ -21,8 +21,8 @@ export default function HeroSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="lg:pr-8 relative">
             {/* Blue gradient background */}
-            <div className="absolute inset-0 bg-gradient-to-br from-blue-100 via-blue-50 to-transparent rounded-3xl -m-8"></div>
-            <div className="relative z-10">
+            <div className="absolute -inset-8 lg:-inset-12 bg-gradient-to-br from-blue-100 via-blue-50 to-transparent rounded-3xl"></div>
+            <div className="relative z-10 py-8">
               <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-brand-charcoal leading-tight mb-6">
                 Smarter Design. <span className="text-brand-blue">Faster Launches.</span> Real Results.
               </h1>
