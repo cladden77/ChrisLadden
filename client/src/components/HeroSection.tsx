@@ -33,7 +33,7 @@ export default function HeroSection() {
     <section id="home" className="relative min-h-screen flex items-center">
       <div className="grid lg:grid-cols-2 w-full min-h-screen">
         {/* Left side with white background */}
-        <div className="bg-white flex items-center justify-center px-4 sm:px-6 lg:px-16 py-12 lg:py-0">
+        <div className="bg-white flex items-center justify-center px-4 sm:px-6 lg:px-16 py-20 sm:py-16 lg:py-0">
           <div className="max-w-lg w-full">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-brand-charcoal leading-tight mb-6">
               Smarter Design. <span className="text-brand-blue">Faster Launches.</span> Real Results.
