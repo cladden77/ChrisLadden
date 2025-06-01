@@ -22,7 +22,7 @@ export default function HeroSection() {
         <div className="bg-gradient-to-br from-[#00BEFF] to-[#1a637f] flex items-center justify-center px-8 lg:px-16">
           <div className="max-w-lg text-white">
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-6">
-              Smarter Design. <span className="text-blue-300">Faster Launches.</span> Real Results.
+              Smarter Design. <span className="text-white underline">Faster Launches.</span> Real Results.
             </h1>
             
             <p className="text-lg lg:text-xl text-purple-100 mb-8 leading-relaxed">
@@ -54,7 +54,8 @@ export default function HeroSection() {
             {/* CTA Button */}
             <button 
               onClick={scrollToContact}
-              className="inline-flex items-center px-8 py-4 bg-white text-purple-700 font-semibold rounded-xl hover:bg-purple-50 transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
+              className="inline-flex items-center px-8 py-4 bg-white font-semibold rounded-xl hover:bg-purple-50 transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
+              style={{ color: '#41b9eb' }}
             >
               Book a Free Discovery Call
               <ArrowRight className="ml-2 w-5 h-5" />
