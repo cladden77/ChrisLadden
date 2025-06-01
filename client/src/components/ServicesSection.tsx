@@ -19,7 +19,7 @@ export default function ServicesSection() {
 
   const services = [
     {
-      icon: <SiWordpress className="text-2xl text-brand-teal" />,
+      icon: <SiWordpress className="text-2xl text-brand-blue" />,
       title: "WordPress Development",
       description: "Custom WordPress solutions that are fast, secure, and easy to manage. From simple blogs to complex business sites with e-commerce capabilities.",
       features: [
@@ -30,7 +30,7 @@ export default function ServicesSection() {
       ]
     },
     {
-      icon: <SiReact className="text-2xl text-brand-teal" />,
+      icon: <SiReact className="text-2xl text-brand-blue" />,
       title: "React Development",
       description: "Modern, interactive web applications built with React. Scalable, maintainable, and performant solutions for complex business needs.",
       features: [
@@ -41,7 +41,7 @@ export default function ServicesSection() {
       ]
     },
     {
-      icon: <Palette className="w-6 h-6 text-brand-teal" />,
+      icon: <Palette className="w-6 h-6 text-brand-blue" />,
       title: "Brand Design",
       description: "Complete brand identity packages including logos, color schemes, typography, and comprehensive brand guidelines for consistent marketing.",
       features: [
@@ -71,7 +71,7 @@ export default function ServicesSection() {
               key={index}
               className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
             >
-              <div className="w-16 h-16 bg-brand-teal/10 rounded-xl flex items-center justify-center mb-6">
+              <div className="w-16 h-16 bg-brand-blue/10 rounded-xl flex items-center justify-center mb-6">
                 {service.icon}
               </div>
               <h3 className="text-xl font-semibold text-brand-charcoal mb-4">
@@ -83,14 +83,14 @@ export default function ServicesSection() {
               <div className="space-y-2 mb-6">
                 {service.features.map((feature, featureIndex) => (
                   <div key={featureIndex} className="flex items-center text-sm text-brand-light-gray">
-                    <div className="w-1.5 h-1.5 bg-brand-teal rounded-full mr-3"></div>
+                    <div className="w-1.5 h-1.5 bg-brand-blue rounded-full mr-3"></div>
                     {feature}
                   </div>
                 ))}
               </div>
               <button 
                 onClick={scrollToContact}
-                className="text-brand-teal font-medium hover:text-brand-deep-teal transition-colors duration-200 inline-flex items-center"
+                className="text-brand-blue font-medium hover:text-brand-deep-blue transition-colors duration-200 inline-flex items-center"
               >
                 Learn More <ArrowRight className="ml-2 w-4 h-4" />
               </button>

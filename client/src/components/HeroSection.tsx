@@ -72,7 +72,7 @@ export default function HeroSection() {
               {/* Floating card overlay */}
               <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-lg">
                 <div className="flex items-center space-x-3">
-                  <div className="w-10 h-10 bg-brand-teal rounded-full flex items-center justify-center">
+                  <div className="w-10 h-10 bg-brand-blue rounded-full flex items-center justify-center">
                     <span className="text-white text-sm font-bold">10+</span>
                   </div>
                   <div>

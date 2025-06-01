@@ -51,7 +51,7 @@ export default function ProcessSection() {
             <div key={index} className="relative">
               <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-all duration-300">
                 <div className="flex items-center mb-6">
-                  <div className="w-12 h-12 bg-brand-teal rounded-full flex items-center justify-center mr-4">
+                  <div className="w-12 h-12 bg-brand-blue rounded-full flex items-center justify-center mr-4">
                     <span className="text-white font-bold text-lg">{step.number}</span>
                   </div>
                   <h3 className="text-xl font-semibold text-brand-charcoal">{step.title}</h3>
@@ -62,7 +62,7 @@ export default function ProcessSection() {
                 <div className="space-y-3">
                   {step.features.map((feature, featureIndex) => (
                     <div key={featureIndex} className="flex items-center text-sm text-brand-light-gray">
-                      <div className="text-brand-teal mr-3">
+                      <div className="text-brand-blue mr-3">
                         {feature.icon}
                       </div>
                       {feature.text}
@@ -72,7 +72,7 @@ export default function ProcessSection() {
               </div>
               {/* Connection line (desktop only) */}
               {index < steps.length - 1 && (
-                <div className="hidden md:block absolute top-6 -right-4 w-8 h-0.5 bg-brand-teal"></div>
+                <div className="hidden md:block absolute top-6 -right-4 w-8 h-0.5 bg-brand-blue"></div>
               )}
             </div>
           ))}
