@@ -15,7 +15,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="flex items-center mb-6 md:mb-0">
             {/* Logo */}
-            <div className="w-10 h-10 bg-brand-teal rounded-lg flex items-center justify-center mr-4">
+            <div className="w-10 h-10 bg-brand-blue rounded-lg flex items-center justify-center mr-4">
               <span className="text-white font-bold text-lg">CL</span>
             </div>
             <span className="text-white font-medium">Chris Ladden</span>
@@ -30,7 +30,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={link.label}
-                className="text-gray-400 hover:text-brand-teal transition-colors duration-200"
+                className="text-gray-400 hover:text-brand-blue transition-colors duration-200"
               >
                 {link.icon}
               </a>

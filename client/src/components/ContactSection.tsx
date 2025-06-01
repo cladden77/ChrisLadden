@@ -21,14 +21,14 @@ export default function ContactSection() {
             {/* Contact Information */}
             <div className="space-y-6 mb-10">
               <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-brand-teal rounded-lg flex items-center justify-center">
+                <div className="w-12 h-12 bg-brand-blue rounded-lg flex items-center justify-center">
                   <Mail className="w-5 h-5 text-white" />
                 </div>
                 <div>
                   <p className="text-gray-300 text-sm">Email</p>
                   <a 
                     href="mailto:chris.ladden@gmail.com" 
-                    className="text-white font-medium hover:text-brand-teal transition-colors duration-200"
+                    className="text-white font-medium hover:text-brand-blue transition-colors duration-200"
                   >
                     chris.ladden@gmail.com
                   </a>
@@ -36,14 +36,14 @@ export default function ContactSection() {
               </div>
               
               <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-brand-teal rounded-lg flex items-center justify-center">
+                <div className="w-12 h-12 bg-brand-blue rounded-lg flex items-center justify-center">
                   <Phone className="w-5 h-5 text-white" />
                 </div>
                 <div>
                   <p className="text-gray-300 text-sm">Phone</p>
                   <a 
                     href="tel:+16026176749" 
-                    className="text-white font-medium hover:text-brand-teal transition-colors duration-200"
+                    className="text-white font-medium hover:text-brand-blue transition-colors duration-200"
                   >
                     (602) 617-6749
                   </a>
@@ -54,7 +54,7 @@ export default function ContactSection() {
             {/* CTA Button */}
             <button 
               onClick={handleScheduleCall}
-              className="inline-flex items-center bg-brand-teal hover:bg-brand-deep-teal text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+              className="inline-flex items-center bg-brand-blue hover:bg-brand-deep-blue text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
             >
               <span>Schedule a Call</span>
               <Calendar className="ml-2 w-5 h-5" />

@@ -40,8 +40,8 @@ export default function TrustSection() {
           <div className="space-y-8">
             {benefits.map((benefit, index) => (
               <div key={index} className="flex items-start">
-                <div className="w-12 h-12 bg-brand-teal/10 rounded-xl flex items-center justify-center mr-4 flex-shrink-0">
-                  <div className="text-brand-teal">
+                <div className="w-12 h-12 bg-brand-blue/10 rounded-xl flex items-center justify-center mr-4 flex-shrink-0">
+                  <div className="text-brand-blue">
                     {benefit.icon}
                   </div>
                 </div>
