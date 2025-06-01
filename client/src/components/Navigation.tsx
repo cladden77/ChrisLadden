@@ -39,7 +39,7 @@ export default function Navigation() {
           <div className="flex items-center">
             <div className="h-10 flex items-center">
               <img 
-                src="/attached_assets/chrisladden-logo.png" 
+                src="/chrisladden-logo.png" 
                 alt="Chris Ladden Logo" 
                 className="h-full w-auto"
               />
