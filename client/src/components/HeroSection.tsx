@@ -90,7 +90,7 @@ export default function HeroSection() {
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
         <button 
           onClick={scrollToServices}
-          className="w-12 h-12 bg-white bg-opacity-90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg hover:bg-opacity-100 transition-all duration-300 animate-bounce"
+          className="w-12 h-12 bg-white bg-opacity-90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg hover:bg-opacity-100 transition-all duration-300"
           aria-label="Scroll to services section"
         >
           <ChevronDown className="w-6 h-6 text-brand-charcoal" />
