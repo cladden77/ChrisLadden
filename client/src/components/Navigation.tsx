@@ -21,63 +21,66 @@ export default function Navigation() {
       const offset = 80; // Account for sticky navbar
       const elementPosition = element.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - offset;
-      
+
       window.scrollTo({
         top: offsetPosition,
-        behavior: "smooth"
+        behavior: "smooth",
       });
     }
     setIsMenuOpen(false);
   };
 
   return (
-    <nav className={`bg-white sticky top-0 z-50 transition-all duration-300 ${
-      isScrolled ? "shadow-lg border-b border-gray-100" : "shadow-sm border-b border-gray-100"
-    }`}>
+    <nav
+      className={`bg-white sticky top-0 z-50 transition-all duration-300 ${
+        isScrolled
+          ? "shadow-lg border-b border-gray-100"
+          : "shadow-sm border-b border-gray-100"
+      }`}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center">
             <div className="h-10 flex items-center">
-              <img 
-                src={logoPath} 
-                alt="Chris Ladden Logo" 
+              <img
+                src={logoPath}
+                alt="Chris Ladden Logo"
                 className="h-full w-auto"
               />
             </div>
-            <span className="ml-3 text-xl font-semibold text-brand-charcoal">Chris Ladden</span>
           </div>
-          
+
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
-            <button 
+            <button
               onClick={() => scrollToSection("home")}
               className="text-brand-graphite hover:text-brand-blue transition-colors duration-200 font-medium"
             >
               Home
             </button>
-            <button 
+            <button
               onClick={() => scrollToSection("services")}
               className="text-brand-graphite hover:text-brand-blue transition-colors duration-200 font-medium"
             >
               Services
             </button>
-            <button 
+            <button
               onClick={() => scrollToSection("process")}
               className="text-brand-graphite hover:text-brand-blue transition-colors duration-200 font-medium"
             >
               Process
             </button>
-            <button 
+            <button
               onClick={() => scrollToSection("contact")}
               className="text-brand-graphite hover:text-brand-blue transition-colors duration-200 font-medium"
             >
               Contact
             </button>
           </div>
-          
+
           {/* Mobile Menu Button */}
-          <button 
+          <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="md:hidden p-2 rounded-md text-brand-graphite hover:text-brand-blue focus:outline-none"
           >
@@ -85,30 +88,30 @@ export default function Navigation() {
           </button>
         </div>
       </div>
-      
+
       {/* Mobile Navigation Menu */}
       {isMenuOpen && (
         <div className="md:hidden bg-white border-t border-gray-100">
           <div className="px-4 py-4 space-y-3">
-            <button 
+            <button
               onClick={() => scrollToSection("home")}
               className="block w-full text-left text-brand-graphite hover:text-brand-blue transition-colors duration-200 font-medium"
             >
               Home
             </button>
-            <button 
+            <button
               onClick={() => scrollToSection("services")}
               className="block w-full text-left text-brand-graphite hover:text-brand-blue transition-colors duration-200 font-medium"
             >
               Services
             </button>
-            <button 
+            <button
               onClick={() => scrollToSection("process")}
               className="block w-full text-left text-brand-graphite hover:text-brand-blue transition-colors duration-200 font-medium"
             >
               Process
             </button>
-            <button 
+            <button
               onClick={() => scrollToSection("contact")}
               className="block w-full text-left text-brand-graphite hover:text-brand-blue transition-colors duration-200 font-medium"
             >
