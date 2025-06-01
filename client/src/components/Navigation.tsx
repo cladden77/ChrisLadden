@@ -47,25 +47,25 @@ export default function Navigation() {
           <div className="hidden md:flex space-x-8">
             <button 
               onClick={() => scrollToSection("home")}
-              className="text-brand-graphite hover:text-brand-teal transition-colors duration-200 font-medium"
+              className="text-brand-graphite hover:text-brand-blue transition-colors duration-200 font-medium"
             >
               Home
             </button>
             <button 
               onClick={() => scrollToSection("services")}
-              className="text-brand-graphite hover:text-brand-teal transition-colors duration-200 font-medium"
+              className="text-brand-graphite hover:text-brand-blue transition-colors duration-200 font-medium"
             >
               Services
             </button>
             <button 
               onClick={() => scrollToSection("process")}
-              className="text-brand-graphite hover:text-brand-teal transition-colors duration-200 font-medium"
+              className="text-brand-graphite hover:text-brand-blue transition-colors duration-200 font-medium"
             >
               Process
             </button>
             <button 
               onClick={() => scrollToSection("contact")}
-              className="text-brand-graphite hover:text-brand-teal transition-colors duration-200 font-medium"
+              className="text-brand-graphite hover:text-brand-blue transition-colors duration-200 font-medium"
             >
               Contact
             </button>
@@ -74,7 +74,7 @@ export default function Navigation() {
           {/* Mobile Menu Button */}
           <button 
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden p-2 rounded-md text-brand-graphite hover:text-brand-teal focus:outline-none"
+            className="md:hidden p-2 rounded-md text-brand-graphite hover:text-brand-blue focus:outline-none"
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -87,25 +87,25 @@ export default function Navigation() {
           <div className="px-4 py-4 space-y-3">
             <button 
               onClick={() => scrollToSection("home")}
-              className="block w-full text-left text-brand-graphite hover:text-brand-teal transition-colors duration-200 font-medium"
+              className="block w-full text-left text-brand-graphite hover:text-brand-blue transition-colors duration-200 font-medium"
             >
               Home
             </button>
             <button 
               onClick={() => scrollToSection("services")}
-              className="block w-full text-left text-brand-graphite hover:text-brand-teal transition-colors duration-200 font-medium"
+              className="block w-full text-left text-brand-graphite hover:text-brand-blue transition-colors duration-200 font-medium"
             >
               Services
             </button>
             <button 
               onClick={() => scrollToSection("process")}
-              className="block w-full text-left text-brand-graphite hover:text-brand-teal transition-colors duration-200 font-medium"
+              className="block w-full text-left text-brand-graphite hover:text-brand-blue transition-colors duration-200 font-medium"
             >
               Process
             </button>
             <button 
               onClick={() => scrollToSection("contact")}
-              className="block w-full text-left text-brand-graphite hover:text-brand-teal transition-colors duration-200 font-medium"
+              className="block w-full text-left text-brand-graphite hover:text-brand-blue transition-colors duration-200 font-medium"
             >
               Contact
             </button>

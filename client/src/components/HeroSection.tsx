@@ -21,7 +21,7 @@ export default function HeroSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="lg:pr-8">
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-brand-charcoal leading-tight mb-6">
-              Smarter Design. <span className="text-brand-teal">Faster Launches.</span> Real Results.
+              Smarter Design. <span className="text-brand-blue">Faster Launches.</span> Real Results.
             </h1>
             
             <p className="text-lg lg:text-xl text-brand-graphite mb-8 leading-relaxed">
@@ -31,19 +31,19 @@ export default function HeroSection() {
             {/* Key Benefits */}
             <div className="space-y-4 mb-10">
               <div className="flex items-center">
-                <div className="w-6 h-6 bg-brand-teal rounded-full flex items-center justify-center flex-shrink-0 mr-4">
+                <div className="w-6 h-6 bg-brand-blue rounded-full flex items-center justify-center flex-shrink-0 mr-4">
                   <Check className="w-4 h-4 text-white" />
                 </div>
                 <span className="text-brand-graphite">AI-enhanced visuals and copywriting</span>
               </div>
               <div className="flex items-center">
-                <div className="w-6 h-6 bg-brand-teal rounded-full flex items-center justify-center flex-shrink-0 mr-4">
+                <div className="w-6 h-6 bg-brand-blue rounded-full flex items-center justify-center flex-shrink-0 mr-4">
                   <Check className="w-4 h-4 text-white" />
                 </div>
                 <span className="text-brand-graphite">Mobile-first, SEO-friendly, scalable websites</span>
               </div>
               <div className="flex items-center">
-                <div className="w-6 h-6 bg-brand-teal rounded-full flex items-center justify-center flex-shrink-0 mr-4">
+                <div className="w-6 h-6 bg-brand-blue rounded-full flex items-center justify-center flex-shrink-0 mr-4">
                   <Check className="w-4 h-4 text-white" />
                 </div>
                 <span className="text-brand-graphite">Delivered fast—ready to launch</span>
@@ -53,7 +53,7 @@ export default function HeroSection() {
             {/* CTA Button */}
             <button 
               onClick={scrollToContact}
-              className="inline-flex items-center px-8 py-4 bg-brand-teal text-white font-semibold rounded-xl hover:bg-brand-deep-teal transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
+              className="inline-flex items-center px-8 py-4 bg-brand-blue text-white font-semibold rounded-xl hover:bg-brand-deep-blue transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
             >
               Book a Free Discovery Call
               <ArrowRight className="ml-2 w-5 h-5" />

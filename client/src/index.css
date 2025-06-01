@@ -16,7 +16,7 @@
   --card-foreground: 210 9% 16%;
   --border: 214 32% 91%;
   --input: 214 32% 91%;
-  --primary: 170 100% 29%; /* #0E8377 brand teal */
+  --primary: 195 100% 50%; /* #00BEFF brand blue */
   --primary-foreground: 0 0% 98%;
   --secondary: 210 40% 96%;
   --secondary-foreground: 210 11% 15%;
@@ -28,8 +28,8 @@
   --radius: 0.75rem;
   
   /* Custom brand colors */
-  --brand-teal: 170 100% 29%; /* #0E8377 */
-  --brand-deep-teal: 172 92% 17%; /* #04544E */
+  --brand-blue: 195 100% 50%; /* #00BEFF */
+  --brand-deep-blue: 195 100% 40%; /* #0099CC */
   --brand-charcoal: 210 9% 16%; /* #2A2A2A */
   --brand-graphite: 210 11% 24%; /* #3D3D3D */
   --brand-light-gray: 210 14% 60%; /* #999999 */
@@ -73,12 +73,12 @@
 }
 
 @layer utilities {
-  .text-brand-teal {
-    color: hsl(var(--brand-teal));
+  .text-brand-blue {
+    color: hsl(var(--brand-blue));
   }
   
-  .text-brand-deep-teal {
-    color: hsl(var(--brand-deep-teal));
+  .text-brand-deep-blue {
+    color: hsl(var(--brand-deep-blue));
   }
   
   .text-brand-charcoal {
@@ -93,12 +93,12 @@
     color: hsl(var(--brand-light-gray));
   }
   
-  .bg-brand-teal {
-    background-color: hsl(var(--brand-teal));
+  .bg-brand-blue {
+    background-color: hsl(var(--brand-blue));
   }
   
-  .bg-brand-deep-teal {
-    background-color: hsl(var(--brand-deep-teal));
+  .bg-brand-deep-blue {
+    background-color: hsl(var(--brand-deep-blue));
   }
   
   .bg-brand-charcoal {
@@ -113,19 +113,19 @@
     background-color: hsl(var(--brand-light-gray));
   }
   
-  .border-brand-teal {
-    border-color: hsl(var(--brand-teal));
+  .border-brand-blue {
+    border-color: hsl(var(--brand-blue));
   }
   
-  .hover\:bg-brand-deep-teal:hover {
-    background-color: hsl(var(--brand-deep-teal));
+  .hover\:bg-brand-deep-blue:hover {
+    background-color: hsl(var(--brand-deep-blue));
   }
   
-  .hover\:text-brand-teal:hover {
-    color: hsl(var(--brand-teal));
+  .hover\:text-brand-blue:hover {
+    color: hsl(var(--brand-blue));
   }
   
-  .hover\:text-brand-deep-teal:hover {
-    color: hsl(var(--brand-deep-teal));
+  .hover\:text-brand-deep-blue:hover {
+    color: hsl(var(--brand-deep-blue));
   }
 }
