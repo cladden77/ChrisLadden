@@ -65,9 +65,7 @@ export default function Navigation() {
                 CL
               </div>
             </div>
-            <span className={`ml-3 text-xl font-semibold transition-colors duration-300 ${
-              isScrolled ? "text-brand-charcoal" : "text-white"
-            }`}>Chris Ladden</span>
+
           </div>
           
           {/* Desktop Navigation */}
