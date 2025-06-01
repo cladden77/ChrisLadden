@@ -1,4 +1,5 @@
 import { Instagram, Twitter, Linkedin } from "lucide-react";
+import whiteLogo from "@assets/chrisladden-logo-white.png";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -15,10 +16,11 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="flex items-center mb-6 md:mb-0">
             {/* Logo */}
-            <div className="w-10 h-10 bg-brand-blue rounded-lg flex items-center justify-center mr-4">
-              <span className="text-white font-bold text-lg">CL</span>
-            </div>
-            <span className="text-white font-medium">Chris Ladden</span>
+            <img 
+              src={whiteLogo} 
+              alt="Chris Ladden Logo" 
+              className="h-10 w-auto"
+            />
           </div>
           
           {/* Social Links */}
