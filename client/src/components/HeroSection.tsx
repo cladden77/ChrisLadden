@@ -63,13 +63,29 @@ export default function HeroSection() {
           </div>
         </div>
         
-        {/* Right side with full image */}
+        {/* Right side with full image and gradient overlay */}
         <div className="relative">
           <img 
             src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&h=1000" 
             alt="Creative team collaborating on digital projects" 
             className="w-full h-full object-cover" 
           />
+          
+          {/* Gradient overlay to blend with left side */}
+          <div className="absolute inset-0 bg-gradient-to-r from-[#1a637f] via-[#1a637f]/40 to-transparent"></div>
+          
+          {/* Floating card overlay */}
+          <div className="absolute bottom-8 left-8 bg-white p-6 rounded-xl shadow-lg z-10">
+            <div className="flex items-center space-x-3">
+              <div className="w-10 h-10 bg-brand-blue rounded-full flex items-center justify-center">
+                <span className="text-white text-sm font-bold">10+</span>
+              </div>
+              <div>
+                <p className="font-semibold text-brand-charcoal">Years</p>
+                <p className="text-sm text-brand-light-gray">Experience</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
