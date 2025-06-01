@@ -42,7 +42,7 @@ export default function Navigation() {
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-in-out ${
-      isScrolled ? "bg-white shadow-lg" : "bg-transparent"
+      isScrolled ? "bg-white shadow-lg" : "bg-transparent lg:bg-transparent bg-gray-100"
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
@@ -75,7 +75,7 @@ export default function Navigation() {
               className={`transition-colors duration-200 font-medium ${
                 isScrolled 
                   ? "text-brand-graphite hover:text-brand-blue" 
-                  : "text-white hover:text-blue-200"
+                  : "text-brand-charcoal lg:text-white hover:text-brand-blue lg:hover:text-blue-200"
               }`}
             >
               Home
@@ -85,7 +85,7 @@ export default function Navigation() {
               className={`transition-colors duration-200 font-medium ${
                 isScrolled 
                   ? "text-brand-graphite hover:text-brand-blue" 
-                  : "text-white hover:text-blue-200"
+                  : "text-brand-charcoal lg:text-white hover:text-brand-blue lg:hover:text-blue-200"
               }`}
             >
               Services
@@ -95,7 +95,7 @@ export default function Navigation() {
               className={`transition-colors duration-200 font-medium ${
                 isScrolled 
                   ? "text-brand-graphite hover:text-brand-blue" 
-                  : "text-white hover:text-blue-200"
+                  : "text-brand-charcoal lg:text-white hover:text-brand-blue lg:hover:text-blue-200"
               }`}
             >
               Process
@@ -105,7 +105,7 @@ export default function Navigation() {
               className={`transition-colors duration-200 font-medium ${
                 isScrolled 
                   ? "text-brand-graphite hover:text-brand-blue" 
-                  : "text-white hover:text-blue-200"
+                  : "text-brand-charcoal lg:text-white hover:text-brand-blue lg:hover:text-blue-200"
               }`}
             >
               Contact
@@ -118,7 +118,7 @@ export default function Navigation() {
             className={`md:hidden p-2 rounded-md focus:outline-none transition-colors duration-200 ${
               isScrolled 
                 ? "text-brand-graphite hover:text-brand-blue" 
-                : "text-white hover:text-blue-200"
+                : "text-brand-charcoal lg:text-white hover:text-brand-blue lg:hover:text-blue-200"
             }`}
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}

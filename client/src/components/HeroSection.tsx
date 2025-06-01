@@ -86,8 +86,8 @@ export default function HeroSection() {
         </div>
       </div>
       
-      {/* Scroll Down Arrow */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+      {/* Scroll Down Arrow - Hidden on mobile */}
+      <div className="hidden lg:block absolute bottom-8 left-1/2 transform -translate-x-1/2">
         <button 
           onClick={scrollToServices}
           className="w-12 h-12 bg-white bg-opacity-90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg hover:bg-opacity-100 transition-all duration-300"
