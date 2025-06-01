@@ -37,13 +37,10 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <div className="h-10 flex items-center">
-              <img 
-                src="/chrisladden-logo.png" 
-                alt="Chris Ladden Logo" 
-                className="h-full w-auto"
-              />
+            <div className="w-10 h-10 bg-brand-charcoal rounded-lg flex items-center justify-center text-white font-bold text-lg">
+              CL
             </div>
+            <span className="ml-3 text-xl font-semibold text-brand-charcoal">Chris Ladden</span>
           </div>
           
           {/* Desktop Navigation */}
