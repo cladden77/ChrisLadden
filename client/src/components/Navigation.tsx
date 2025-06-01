@@ -78,7 +78,7 @@ export default function Navigation() {
               className={`transition-colors duration-200 font-medium ${
                 isScrolled 
                   ? "text-brand-graphite hover:text-brand-blue" 
-                  : "text-brand-charcoal lg:text-white hover:text-brand-blue lg:hover:text-blue-200"
+                  : "text-brand-charcoal lg:text-white hover:text-brand-blue lg:hover:text-brand-blue"
               }`}
             >
               Home
@@ -88,7 +88,7 @@ export default function Navigation() {
               className={`transition-colors duration-200 font-medium ${
                 isScrolled 
                   ? "text-brand-graphite hover:text-brand-blue" 
-                  : "text-brand-charcoal lg:text-white hover:text-brand-blue lg:hover:text-blue-200"
+                  : "text-brand-charcoal lg:text-white hover:text-brand-blue lg:hover:text-brand-blue"
               }`}
             >
               Services
@@ -98,7 +98,7 @@ export default function Navigation() {
               className={`transition-colors duration-200 font-medium ${
                 isScrolled 
                   ? "text-brand-graphite hover:text-brand-blue" 
-                  : "text-brand-charcoal lg:text-white hover:text-brand-blue lg:hover:text-blue-200"
+                  : "text-brand-charcoal lg:text-white hover:text-brand-blue lg:hover:text-brand-blue"
               }`}
             >
               Process
@@ -108,7 +108,7 @@ export default function Navigation() {
               className={`transition-colors duration-200 font-medium ${
                 isScrolled 
                   ? "text-brand-graphite hover:text-brand-blue" 
-                  : "text-brand-charcoal lg:text-white hover:text-brand-blue lg:hover:text-blue-200"
+                  : "text-brand-charcoal lg:text-white hover:text-brand-blue lg:hover:text-brand-blue"
               }`}
             >
               Contact
