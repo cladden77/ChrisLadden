@@ -16,44 +16,44 @@ export default function HeroSection() {
   };
 
   return (
-    <section id="home" className="relative bg-gradient-to-br from-blue-400 via-blue-500 to-blue-600 py-16 lg:py-24 overflow-hidden">
+    <section id="home" className="relative bg-white py-16 lg:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-12 items-center relative z-10">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="lg:pr-8">
-            <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight mb-6">
-              Smarter Design. <span className="text-yellow-300">Faster Launches.</span> Real Results.
+            <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-brand-charcoal leading-tight mb-6">
+              Smarter Design. <span className="text-brand-blue">Faster Launches.</span> Real Results.
             </h1>
             
-            <p className="text-lg lg:text-xl text-blue-100 mb-8 leading-relaxed">
+            <p className="text-lg lg:text-xl text-brand-graphite mb-8 leading-relaxed">
               Hi, I'm Chris Ladden—a creative developer blending strategy, design, and AI to help founders, creators, and small teams launch powerful brands and websites that perform from day one.
             </p>
             
             {/* Key Benefits */}
             <div className="space-y-4 mb-10">
               <div className="flex items-center">
-                <div className="w-6 h-6 bg-white rounded-full flex items-center justify-center flex-shrink-0 mr-4">
-                  <Check className="w-4 h-4 text-blue-600" />
+                <div className="w-6 h-6 bg-brand-blue rounded-full flex items-center justify-center flex-shrink-0 mr-4">
+                  <Check className="w-4 h-4 text-white" />
                 </div>
-                <span className="text-blue-100">AI-enhanced visuals and copywriting</span>
+                <span className="text-brand-graphite">AI-enhanced visuals and copywriting</span>
               </div>
               <div className="flex items-center">
-                <div className="w-6 h-6 bg-white rounded-full flex items-center justify-center flex-shrink-0 mr-4">
-                  <Check className="w-4 h-4 text-blue-600" />
+                <div className="w-6 h-6 bg-brand-blue rounded-full flex items-center justify-center flex-shrink-0 mr-4">
+                  <Check className="w-4 h-4 text-white" />
                 </div>
-                <span className="text-blue-100">Mobile-first, SEO-friendly, scalable websites</span>
+                <span className="text-brand-graphite">Mobile-first, SEO-friendly, scalable websites</span>
               </div>
               <div className="flex items-center">
-                <div className="w-6 h-6 bg-white rounded-full flex items-center justify-center flex-shrink-0 mr-4">
-                  <Check className="w-4 h-4 text-blue-600" />
+                <div className="w-6 h-6 bg-brand-blue rounded-full flex items-center justify-center flex-shrink-0 mr-4">
+                  <Check className="w-4 h-4 text-white" />
                 </div>
-                <span className="text-blue-100">Delivered fast—ready to launch</span>
+                <span className="text-brand-graphite">Delivered fast—ready to launch</span>
               </div>
             </div>
             
             {/* CTA Button */}
             <button 
               onClick={scrollToContact}
-              className="inline-flex items-center px-8 py-4 bg-white text-blue-600 font-semibold rounded-xl hover:bg-gray-100 transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
+              className="inline-flex items-center px-8 py-4 bg-brand-blue text-white font-semibold rounded-xl hover:bg-brand-deep-blue transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
             >
               Book a Free Discovery Call
               <ArrowRight className="ml-2 w-5 h-5" />
@@ -61,26 +61,23 @@ export default function HeroSection() {
           </div>
           
           {/* Hero Image */}
-          <div className="lg:pl-8 relative lg:overflow-visible">
-            <div className="relative lg:translate-x-24">
-              {/* Large circular background */}
-              <div className="absolute inset-0 w-[500px] h-[500px] bg-white/20 rounded-full -z-10 transform translate-x-16 -translate-y-12"></div>
-              
+          <div className="lg:pl-8">
+            <div className="relative">
               <img 
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&h=1000" 
-                alt="Professional developer portrait" 
-                className="relative z-10 w-[450px] h-[450px] object-cover rounded-full shadow-2xl border-8 border-white/30" 
+                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
+                alt="Modern developer workspace with dual monitors showing code and design" 
+                className="rounded-2xl shadow-2xl w-full h-auto" 
               />
               
-              {/* Floating stats card */}
-              <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-lg z-20">
+              {/* Floating card overlay */}
+              <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-lg">
                 <div className="flex items-center space-x-3">
-                  <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center">
+                  <div className="w-10 h-10 bg-brand-blue rounded-full flex items-center justify-center">
                     <span className="text-white text-sm font-bold">10+</span>
                   </div>
                   <div>
-                    <p className="font-semibold text-gray-800">Years</p>
-                    <p className="text-sm text-gray-600">Experience</p>
+                    <p className="font-semibold text-brand-charcoal">Years</p>
+                    <p className="text-sm text-brand-light-gray">Experience</p>
                   </div>
                 </div>
               </div>
