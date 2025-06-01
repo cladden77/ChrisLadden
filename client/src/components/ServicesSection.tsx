@@ -19,7 +19,7 @@ export default function ServicesSection() {
 
   const services = [
     {
-      icon: <SiWordpress className="text-2xl text-brand-blue" />,
+      icon: <SiWordpress className="text-4xl" />,
       title: "WordPress Development",
       description: "Custom WordPress solutions that are fast, secure, and easy to manage. From simple blogs to complex business sites with e-commerce capabilities.",
       features: [
@@ -30,7 +30,7 @@ export default function ServicesSection() {
       ]
     },
     {
-      icon: <SiReact className="text-2xl text-brand-blue" />,
+      icon: <SiReact className="text-4xl" />,
       title: "React Development",
       description: "Modern, interactive web applications built with React. Scalable, maintainable, and performant solutions for complex business needs.",
       features: [
@@ -41,7 +41,7 @@ export default function ServicesSection() {
       ]
     },
     {
-      icon: <Palette className="w-6 h-6 text-brand-blue" />,
+      icon: <Palette className="w-10 h-10" />,
       title: "Brand Design",
       description: "Complete brand identity packages including logos, color schemes, typography, and comprehensive brand guidelines for consistent marketing.",
       features: [
@@ -65,14 +65,16 @@ export default function ServicesSection() {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-8 mt-16">
           {services.map((service, index) => (
             <div 
               key={index}
-              className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
+              className="bg-white rounded-2xl p-8 pt-16 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 relative"
             >
-              <div className="w-16 h-16 bg-brand-blue/10 rounded-xl flex items-center justify-center mb-6">
-                {service.icon}
+              <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 w-20 h-20 bg-brand-blue rounded-2xl flex items-center justify-center shadow-lg">
+                <div className="text-3xl text-white">
+                  {service.icon}
+                </div>
               </div>
               <h3 className="text-xl font-semibold text-brand-charcoal mb-4">
                 {service.title}
