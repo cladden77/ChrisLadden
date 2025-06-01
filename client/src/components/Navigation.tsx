@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-import logoPath from "@assets/chrisladden-logo.png";
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -40,11 +39,12 @@ export default function Navigation() {
           <div className="flex items-center">
             <div className="h-10 flex items-center">
               <img 
-                src={logoPath} 
+                src="/attached_assets/chrisladden-logo.png" 
                 alt="Chris Ladden Logo" 
                 className="h-full w-auto"
               />
             </div>
+            <span className="ml-3 text-xl font-semibold text-brand-charcoal">Chris Ladden</span>
           </div>
           
           {/* Desktop Navigation */}
