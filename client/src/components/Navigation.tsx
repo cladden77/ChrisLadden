@@ -37,10 +37,17 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <div className="w-10 h-10 bg-brand-charcoal rounded-lg flex items-center justify-center text-white font-bold text-lg">
-              CL
+            <div className="h-10 flex items-center">
+              <svg width="180" height="40" viewBox="0 0 500 100" className="h-full">
+                <g transform="scale(0.2)">
+                  <circle cx="250" cy="250" r="240" fill="none" stroke="#2c2c2c" strokeWidth="20"/>
+                  <circle cx="250" cy="250" r="200" fill="none" stroke="#2c2c2c" strokeWidth="8"/>
+                  <text x="250" y="200" textAnchor="middle" fontSize="120" fontFamily="serif" fontWeight="bold" fill="#2c2c2c">CL</text>
+                  <text x="750" y="200" textAnchor="start" fontSize="140" fontFamily="serif" fontWeight="bold" fill="#2c2c2c">CHRIS</text>
+                  <text x="750" y="320" textAnchor="start" fontSize="140" fontFamily="serif" fontWeight="bold" fill="#2c2c2c">LADDEN</text>
+                </g>
+              </svg>
             </div>
-            <span className="ml-3 text-xl font-semibold text-brand-charcoal">Chris Ladden</span>
           </div>
           
           {/* Desktop Navigation */}
