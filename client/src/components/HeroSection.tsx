@@ -70,7 +70,7 @@ export default function HeroSection() {
               onClick={scrollToContact}
               className="inline-flex items-center px-6 sm:px-8 py-3 sm:py-4 bg-brand-blue text-white font-semibold rounded-xl hover:bg-brand-deep-blue transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl text-sm sm:text-base"
             >
-              Book a Free Discovery Call
+              Start Your Project
               <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
             </button>
           </div>

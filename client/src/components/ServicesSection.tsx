@@ -94,7 +94,7 @@ export default function ServicesSection() {
                 onClick={scrollToContact}
                 className="text-brand-blue font-medium hover:text-brand-deep-blue transition-colors duration-200 inline-flex items-center"
               >
-                Learn More <ArrowRight className="ml-2 w-4 h-4" />
+                Start Your Project <ArrowRight className="ml-2 w-4 h-4" />
               </button>
             </div>
           ))}
