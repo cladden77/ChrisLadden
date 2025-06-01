@@ -22,7 +22,7 @@ export default function HeroSection() {
         <div className="bg-gradient-to-br from-[#00BEFF] to-[#1a637f] flex items-center justify-center px-8 lg:px-16">
           <div className="max-w-lg text-white">
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-6">
-              Smarter Design. <span className="text-white underline">Faster Launches.</span> Real Results.
+              Smarter Design. <span className="text-blue-300">Faster Launches.</span> Real Results.
             </h1>
             
             <p className="text-lg lg:text-xl text-purple-100 mb-8 leading-relaxed">
@@ -54,8 +54,7 @@ export default function HeroSection() {
             {/* CTA Button */}
             <button 
               onClick={scrollToContact}
-              className="inline-flex items-center px-8 py-4 bg-white font-semibold rounded-xl hover:bg-purple-50 transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
-              style={{ color: '#41b9eb' }}
+              className="inline-flex items-center px-8 py-4 bg-white text-purple-700 font-semibold rounded-xl hover:bg-purple-50 transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
             >
               Book a Free Discovery Call
               <ArrowRight className="ml-2 w-5 h-5" />
@@ -63,7 +62,7 @@ export default function HeroSection() {
           </div>
         </div>
         
-        {/* Right side with full image and gradient overlay */}
+        {/* Right side with full image */}
         <div className="relative">
           <img 
             src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&h=1000" 
@@ -71,11 +70,8 @@ export default function HeroSection() {
             className="w-full h-full object-cover" 
           />
           
-          {/* Gradient overlay to blend with left side */}
-          <div className="absolute inset-0 bg-gradient-to-r from-[#1a637f] via-[#1a637f]/40 to-transparent"></div>
-          
           {/* Floating card overlay */}
-          <div className="absolute bottom-8 left-8 bg-white p-6 rounded-xl shadow-lg z-10">
+          <div className="absolute bottom-8 left-8 bg-white p-6 rounded-xl shadow-lg">
             <div className="flex items-center space-x-3">
               <div className="w-10 h-10 bg-brand-blue rounded-full flex items-center justify-center">
                 <span className="text-white text-sm font-bold">10+</span>
