@@ -19,49 +19,45 @@ export default function HeroSection() {
     <section id="home" className="relative bg-white py-16 lg:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="lg:pr-8 relative">
-            {/* Blue gradient background */}
-            <div className="absolute -inset-8 lg:-inset-12 bg-gradient-to-br from-blue-100 via-blue-50 to-transparent rounded-3xl"></div>
-            <div className="relative z-10 py-8">
-              <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-brand-charcoal leading-tight mb-6">
-                Smarter Design. <span className="text-brand-blue">Faster Launches.</span> Real Results.
-              </h1>
-              
-              <p className="text-lg lg:text-xl text-brand-graphite mb-8 leading-relaxed">
-                Hi, I'm Chris Ladden—a creative developer blending strategy, design, and AI to help founders, creators, and small teams launch powerful brands and websites that perform from day one.
-              </p>
-              
-              {/* Key Benefits */}
-              <div className="space-y-4 mb-10">
-                <div className="flex items-center">
-                  <div className="w-6 h-6 bg-brand-blue rounded-full flex items-center justify-center flex-shrink-0 mr-4">
-                    <Check className="w-4 h-4 text-white" />
-                  </div>
-                  <span className="text-brand-graphite">AI-enhanced visuals and copywriting</span>
+          <div className="lg:pr-8 relative bg-gradient-to-br from-blue-100 to-blue-50 rounded-3xl p-8 lg:p-12">
+            <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-brand-charcoal leading-tight mb-6">
+              Smarter Design. <span className="text-brand-blue">Faster Launches.</span> Real Results.
+            </h1>
+            
+            <p className="text-lg lg:text-xl text-brand-graphite mb-8 leading-relaxed">
+              Hi, I'm Chris Ladden—a creative developer blending strategy, design, and AI to help founders, creators, and small teams launch powerful brands and websites that perform from day one.
+            </p>
+            
+            {/* Key Benefits */}
+            <div className="space-y-4 mb-10">
+              <div className="flex items-center">
+                <div className="w-6 h-6 bg-brand-blue rounded-full flex items-center justify-center flex-shrink-0 mr-4">
+                  <Check className="w-4 h-4 text-white" />
                 </div>
-                <div className="flex items-center">
-                  <div className="w-6 h-6 bg-brand-blue rounded-full flex items-center justify-center flex-shrink-0 mr-4">
-                    <Check className="w-4 h-4 text-white" />
-                  </div>
-                  <span className="text-brand-graphite">Mobile-first, SEO-friendly, scalable websites</span>
-                </div>
-                <div className="flex items-center">
-                  <div className="w-6 h-6 bg-brand-blue rounded-full flex items-center justify-center flex-shrink-0 mr-4">
-                    <Check className="w-4 h-4 text-white" />
-                  </div>
-                  <span className="text-brand-graphite">Delivered fast—ready to launch</span>
-                </div>
+                <span className="text-brand-graphite">AI-enhanced visuals and copywriting</span>
               </div>
-              
-              {/* CTA Button */}
-              <button 
-                onClick={scrollToContact}
-                className="inline-flex items-center px-8 py-4 bg-brand-blue text-white font-semibold rounded-xl hover:bg-brand-deep-blue transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
-              >
-                Book a Free Discovery Call
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </button>
+              <div className="flex items-center">
+                <div className="w-6 h-6 bg-brand-blue rounded-full flex items-center justify-center flex-shrink-0 mr-4">
+                  <Check className="w-4 h-4 text-white" />
+                </div>
+                <span className="text-brand-graphite">Mobile-first, SEO-friendly, scalable websites</span>
+              </div>
+              <div className="flex items-center">
+                <div className="w-6 h-6 bg-brand-blue rounded-full flex items-center justify-center flex-shrink-0 mr-4">
+                  <Check className="w-4 h-4 text-white" />
+                </div>
+                <span className="text-brand-graphite">Delivered fast—ready to launch</span>
+              </div>
             </div>
+            
+            {/* CTA Button */}
+            <button 
+              onClick={scrollToContact}
+              className="inline-flex items-center px-8 py-4 bg-brand-blue text-white font-semibold rounded-xl hover:bg-brand-deep-blue transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
+            >
+              Book a Free Discovery Call
+              <ArrowRight className="ml-2 w-5 h-5" />
+            </button>
           </div>
           
           {/* Hero Image */}
