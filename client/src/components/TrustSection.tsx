@@ -3,11 +3,6 @@ import { Clock, Rocket, MessageCircle } from "lucide-react";
 export default function TrustSection() {
   const benefits = [
     {
-      icon: <Clock className="w-6 h-6" />,
-      title: "10+ Years of Experience",
-      description: "Proven track record of delivering high-quality solutions across various industries and project scales."
-    },
-    {
       icon: <Rocket className="w-6 h-6" />,
       title: "Fast Turnarounds",
       description: "Efficient workflows and streamlined processes mean your project launches on time, every time."

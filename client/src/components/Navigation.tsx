@@ -8,11 +8,23 @@ export default function Navigation() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 0);
+      setIsScrolled(window.scrollY > 20);
     };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    // Throttle scroll events for smoother performance
+    let ticking = false;
+    const throttledScroll = () => {
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          handleScroll();
+          ticking = false;
+        });
+        ticking = true;
+      }
+    };
+
+    window.addEventListener("scroll", throttledScroll, { passive: true });
+    return () => window.removeEventListener("scroll", throttledScroll);
   }, []);
 
   const scrollToSection = (sectionId: string) => {
