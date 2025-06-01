@@ -19,7 +19,7 @@ export default function HeroSection() {
     <section id="home" className="relative min-h-screen flex items-center">
       <div className="grid lg:grid-cols-2 w-full h-screen">
         {/* Left side with gradient background */}
-        <div className="bg-gradient-to-br from-purple-600 via-purple-700 to-blue-800 flex items-center justify-center px-8 lg:px-16">
+        <div className="bg-gradient-to-br from-[#00BEFF] to-[#1a637f] flex items-center justify-center px-8 lg:px-16">
           <div className="max-w-lg text-white">
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-6">
               Smarter Design. <span className="text-blue-300">Faster Launches.</span> Real Results.
