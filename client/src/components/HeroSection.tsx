@@ -61,26 +61,26 @@ export default function HeroSection() {
           </div>
           
           {/* Hero Image */}
-          <div className="lg:pl-8 relative">
-            <div className="relative">
+          <div className="lg:pl-8 relative lg:overflow-visible">
+            <div className="relative lg:translate-x-24">
               {/* Large circular background */}
-              <div className="absolute inset-0 w-96 h-96 bg-white/20 rounded-full -z-10 transform translate-x-12 -translate-y-8"></div>
+              <div className="absolute inset-0 w-[500px] h-[500px] bg-white/20 rounded-full -z-10 transform translate-x-16 -translate-y-12"></div>
               
               <img 
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=800" 
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&h=1000" 
                 alt="Professional developer portrait" 
-                className="relative z-10 w-80 h-80 object-cover rounded-full shadow-2xl border-4 border-white/30" 
+                className="relative z-10 w-[450px] h-[450px] object-cover rounded-full shadow-2xl border-8 border-white/30" 
               />
               
               {/* Floating stats card */}
-              <div className="absolute -bottom-4 -left-4 bg-white p-4 rounded-xl shadow-lg z-20">
+              <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-lg z-20">
                 <div className="flex items-center space-x-3">
-                  <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
-                    <span className="text-white text-xs font-bold">10+</span>
+                  <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center">
+                    <span className="text-white text-sm font-bold">10+</span>
                   </div>
                   <div>
-                    <p className="font-semibold text-gray-800 text-sm">Years</p>
-                    <p className="text-xs text-gray-600">Experience</p>
+                    <p className="font-semibold text-gray-800">Years</p>
+                    <p className="text-sm text-gray-600">Experience</p>
                   </div>
                 </div>
               </div>
