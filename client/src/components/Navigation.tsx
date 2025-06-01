@@ -45,7 +45,6 @@ export default function Navigation() {
                 className="h-full w-auto"
               />
             </div>
-            <span className="ml-3 text-xl font-semibold text-brand-charcoal">Chris Ladden</span>
           </div>
           
           {/* Desktop Navigation */}
