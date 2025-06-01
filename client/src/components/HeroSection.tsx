@@ -69,19 +69,6 @@ export default function HeroSection() {
             alt="Creative team collaborating on digital projects" 
             className="w-full h-full object-cover" 
           />
-          
-          {/* Floating card overlay */}
-          <div className="absolute bottom-8 left-8 bg-white p-6 rounded-xl shadow-lg">
-            <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-brand-blue rounded-full flex items-center justify-center">
-                <span className="text-white text-sm font-bold">10+</span>
-              </div>
-              <div>
-                <p className="font-semibold text-brand-charcoal">Years</p>
-                <p className="text-sm text-brand-light-gray">Experience</p>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
