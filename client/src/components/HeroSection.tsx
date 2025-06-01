@@ -18,8 +18,8 @@ export default function HeroSection() {
   return (
     <section id="home" className="relative bg-white py-16 lg:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="lg:pr-8 relative bg-gradient-to-br from-blue-100 to-blue-50 rounded-3xl p-8 lg:p-12">
+        <div className="grid lg:grid-cols-2 gap-12 items-stretch min-h-[600px]">
+          <div className="relative bg-gradient-to-br from-blue-100 to-blue-50 rounded-3xl p-8 lg:p-12 flex flex-col justify-center">
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-brand-charcoal leading-tight mb-6">
               Smarter Design. <span className="text-brand-blue">Faster Launches.</span> Real Results.
             </h1>
