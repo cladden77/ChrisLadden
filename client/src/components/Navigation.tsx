@@ -8,7 +8,8 @@ export default function Navigation() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
+      const scrollThreshold = window.innerWidth < 1024 ? 0 : 10; // 0 for mobile, 10 for desktop
+      setIsScrolled(window.scrollY > scrollThreshold);
     };
 
     // Debounce scroll events to prevent flickering
@@ -19,8 +20,10 @@ export default function Navigation() {
     };
 
     window.addEventListener("scroll", debouncedScroll, { passive: true });
+    window.addEventListener("resize", handleScroll, { passive: true }); // Handle screen size changes
     return () => {
       window.removeEventListener("scroll", debouncedScroll);
+      window.removeEventListener("resize", handleScroll);
       clearTimeout(timeoutId);
     };
   }, []);
