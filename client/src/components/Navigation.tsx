@@ -31,8 +31,8 @@ export default function Navigation() {
   };
 
   return (
-    <nav className={`bg-white sticky top-0 z-50 transition-all duration-300 ${
-      isScrolled ? "shadow-lg border-b border-gray-100" : "shadow-sm border-b border-gray-100"
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      isScrolled ? "bg-white shadow-lg border-b border-gray-100" : "bg-transparent"
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
@@ -43,33 +43,62 @@ export default function Navigation() {
                 src={logoPath} 
                 alt="Chris Ladden Logo" 
                 className="h-full w-auto"
+                onError={(e) => {
+                  e.currentTarget.style.display = 'none';
+                  const fallback = e.currentTarget.nextElementSibling as HTMLElement;
+                  if (fallback) fallback.style.display = 'flex';
+                }}
               />
+              <div className={`w-10 h-10 rounded-lg flex items-center justify-center text-white font-bold text-lg hidden transition-colors duration-300 ${
+                isScrolled ? "bg-brand-charcoal" : "bg-white bg-opacity-20"
+              }`}>
+                CL
+              </div>
             </div>
+            <span className={`ml-3 text-xl font-semibold transition-colors duration-300 ${
+              isScrolled ? "text-brand-charcoal" : "text-white"
+            }`}>Chris Ladden</span>
           </div>
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
             <button 
               onClick={() => scrollToSection("home")}
-              className="text-brand-graphite hover:text-brand-blue transition-colors duration-200 font-medium"
+              className={`transition-colors duration-200 font-medium ${
+                isScrolled 
+                  ? "text-brand-graphite hover:text-brand-blue" 
+                  : "text-white hover:text-blue-200"
+              }`}
             >
               Home
             </button>
             <button 
               onClick={() => scrollToSection("services")}
-              className="text-brand-graphite hover:text-brand-blue transition-colors duration-200 font-medium"
+              className={`transition-colors duration-200 font-medium ${
+                isScrolled 
+                  ? "text-brand-graphite hover:text-brand-blue" 
+                  : "text-white hover:text-blue-200"
+              }`}
             >
               Services
             </button>
             <button 
               onClick={() => scrollToSection("process")}
-              className="text-brand-graphite hover:text-brand-blue transition-colors duration-200 font-medium"
+              className={`transition-colors duration-200 font-medium ${
+                isScrolled 
+                  ? "text-brand-graphite hover:text-brand-blue" 
+                  : "text-white hover:text-blue-200"
+              }`}
             >
               Process
             </button>
             <button 
               onClick={() => scrollToSection("contact")}
-              className="text-brand-graphite hover:text-brand-blue transition-colors duration-200 font-medium"
+              className={`transition-colors duration-200 font-medium ${
+                isScrolled 
+                  ? "text-brand-graphite hover:text-brand-blue" 
+                  : "text-white hover:text-blue-200"
+              }`}
             >
               Contact
             </button>
@@ -78,7 +107,11 @@ export default function Navigation() {
           {/* Mobile Menu Button */}
           <button 
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden p-2 rounded-md text-brand-graphite hover:text-brand-blue focus:outline-none"
+            className={`md:hidden p-2 rounded-md focus:outline-none transition-colors duration-200 ${
+              isScrolled 
+                ? "text-brand-graphite hover:text-brand-blue" 
+                : "text-white hover:text-blue-200"
+            }`}
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
