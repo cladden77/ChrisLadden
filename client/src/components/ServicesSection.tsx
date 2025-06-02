@@ -21,29 +21,29 @@ export default function ServicesSection() {
     {
       icon: <SiWordpress className="text-4xl" />,
       title: "WordPress Development",
-      description: "Custom WordPress solutions that are fast, secure, and easy to manage. From simple blogs to complex business sites with e-commerce capabilities.",
+      description: "Custom WordPress solutions that are fast, secure, and easy to manage. From simple blogs to complex business sites.",
       features: [
         "Custom theme development",
-        "SEO optimization",
+        "SEO optimization", 
         "E-commerce integration",
         "Performance optimization"
       ]
     },
     {
       icon: <SiReact className="text-4xl" />,
-      title: "React Development",
-      description: "Modern, interactive web applications built with React. Scalable, maintainable, and performant solutions for complex business needs.",
+      title: "React Development", 
+      description: "Modern, interactive web applications built with React. Scalable, maintainable solutions for complex business needs.",
       features: [
         "Modern JavaScript frameworks",
         "API integration",
-        "Performance optimization",
+        "Performance optimization", 
         "Mobile-responsive design"
       ]
     },
     {
       icon: <Palette className="w-10 h-10" />,
       title: "Brand Design",
-      description: "Complete brand identity packages including logos, color schemes, typography, and comprehensive brand guidelines for consistent marketing.",
+      description: "Complete brand identity packages including logos, color schemes, typography, and comprehensive brand guidelines.",
       features: [
         "Logo & identity design",
         "UI/UX design",
@@ -54,25 +54,26 @@ export default function ServicesSection() {
   ];
 
   return (
-    <section id="services" className="pt-2 pb-12 sm:pt-4 sm:pb-16 lg:py-24 bg-gray-50">
+    <section id="services" className="py-16 lg:py-24 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12 sm:mb-16">
+        <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-brand-charcoal mb-4">
-            Services That Drive Results
+            Our Three Loops at a Glance
           </h2>
-          <p className="text-xl text-brand-graphite max-w-3xl mx-auto">
-            From concept to launch, I provide comprehensive development and design solutions tailored to your unique needs.
+          <p className="text-lg text-brand-graphite max-w-2xl mx-auto">
+            Build a strong foundation and boost your business 
+            to reach sustainable scale and breakthrough.
           </p>
         </div>
         
-        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 md:gap-8 mt-8 lg:mt-16">
+        <div className="grid md:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <div 
               key={index}
-              className="bg-white rounded-2xl p-6 sm:p-8 pt-20 lg:pt-24 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 relative"
+              className="bg-white rounded-lg p-8 text-center hover:shadow-lg transition-shadow duration-200"
             >
-              <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 w-20 h-20 bg-brand-blue rounded-2xl flex items-center justify-center shadow-lg">
-                <div className="text-3xl text-white">
+              <div className="w-16 h-16 bg-gray-100 rounded-lg flex items-center justify-center mx-auto mb-6">
+                <div className="text-brand-blue text-2xl">
                   {service.icon}
                 </div>
               </div>
@@ -82,20 +83,14 @@ export default function ServicesSection() {
               <p className="text-brand-graphite mb-6 leading-relaxed">
                 {service.description}
               </p>
-              <div className="space-y-2 mb-6">
+              <div className="space-y-2 text-left">
                 {service.features.map((feature, featureIndex) => (
-                  <div key={featureIndex} className="flex items-center text-sm text-brand-light-gray">
-                    <div className="w-1.5 h-1.5 bg-brand-blue rounded-full mr-3"></div>
+                  <div key={featureIndex} className="flex items-center text-sm text-brand-graphite">
+                    <div className="w-1.5 h-1.5 bg-brand-blue rounded-full mr-3 flex-shrink-0"></div>
                     {feature}
                   </div>
                 ))}
               </div>
-              <button 
-                onClick={scrollToContact}
-                className="text-brand-blue font-medium hover:text-brand-deep-blue transition-colors duration-200 inline-flex items-center"
-              >
-                Learn More <ArrowRight className="ml-2 w-4 h-4" />
-              </button>
             </div>
           ))}
         </div>
