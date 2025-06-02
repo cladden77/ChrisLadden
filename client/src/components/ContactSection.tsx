@@ -1,4 +1,4 @@
-import { Mail, Phone, ArrowRight, Calendar } from "lucide-react";
+import { Mail, ArrowRight, Calendar } from "lucide-react";
 
 export default function ContactSection() {
   const handleScheduleCall = () => {
@@ -34,21 +34,6 @@ export default function ContactSection() {
                 </div>
               </div>
               
-              <div className="flex items-center space-x-4">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-brand-blue rounded-lg flex items-center justify-center flex-shrink-0">
-                  <Phone className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
-                </div>
-                <div>
-                  <p className="text-gray-300 text-xs sm:text-sm">Phone</p>
-                  <a 
-                    href="tel:+16026176749" 
-                    className="text-white font-medium hover:text-brand-blue transition-colors duration-200 text-sm sm:text-base"
-                  >
-                    (602) 617-6749
-                  </a>
-                </div>
-              </div>
-
               <div className="flex items-center space-x-4">
                 <div className="w-10 h-10 sm:w-12 sm:h-12 bg-brand-blue rounded-lg flex items-center justify-center flex-shrink-0">
                   <Calendar className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
