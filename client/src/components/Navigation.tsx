@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-import logoPath from "@assets/chrisladden-logo.png";
+import blackLogo from "@assets/chrisladden-logo.png";
+import whiteLogo from "@assets/chrisladden-logo-white.png";
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -53,7 +54,7 @@ export default function Navigation() {
           <div className="flex items-center">
             <div className="h-10 flex items-center">
               <img 
-                src={logoPath} 
+                src={isScrolled ? blackLogo : whiteLogo} 
                 alt="Chris Ladden Logo" 
                 className="h-full w-auto"
                 onError={(e) => {
