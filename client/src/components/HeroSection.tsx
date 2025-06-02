@@ -25,7 +25,7 @@ export default function HeroSection() {
           I create modern, responsive websites and applications that turn your vision into reality. From concept to launch, I deliver solutions that drive growth.
         </p>
         
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <div className="flex flex-col gap-4 justify-center items-center">
           <button 
             onClick={scrollToContact}
             className="inline-flex items-center px-8 py-4 bg-brand-blue text-white font-semibold rounded-lg hover:bg-brand-deep-blue transition-all duration-200 shadow-lg hover:shadow-xl"
@@ -33,7 +33,7 @@ export default function HeroSection() {
             Start Your Project
             <ArrowRight className="ml-2 w-5 h-5" />
           </button>
-          <p className="text-gray-400 text-sm">
+          <p className="text-gray-400 text-sm text-center">
             Free consultation • Quick turnaround
           </p>
         </div>
