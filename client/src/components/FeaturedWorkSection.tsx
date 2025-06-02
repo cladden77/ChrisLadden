@@ -119,6 +119,13 @@ export default function FeaturedWorkSection() {
         <div className="flex justify-center mt-6 md:hidden">
           <p className="text-sm text-brand-graphite">← Swipe to see more projects →</p>
         </div>
+
+        {/* See More Work Button */}
+        <div className="flex justify-center mt-12">
+          <button className="inline-flex items-center px-8 py-3 bg-brand-blue text-white font-semibold rounded-lg hover:bg-brand-deep-blue transition-all duration-200 shadow-lg hover:shadow-xl">
+            See More Work
+          </button>
+        </div>
       </div>
 
 
