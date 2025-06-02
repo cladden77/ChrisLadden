@@ -1,9 +1,8 @@
-import { Mail, Phone, ArrowRight } from "lucide-react";
+import { Mail, Phone, ArrowRight, Calendar } from "lucide-react";
 
 export default function ContactSection() {
   const handleScheduleCall = () => {
-    // This would link to Calendly or another scheduling platform
-    window.open("https://calendly.com/chrisladden", "_blank");
+    window.open("https://calendly.com/chris-ladden/30min", "_blank");
   };
 
   return (
@@ -46,6 +45,23 @@ export default function ContactSection() {
                     className="text-white font-medium hover:text-brand-blue transition-colors duration-200 text-sm sm:text-base"
                   >
                     (602) 617-6749
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex items-center space-x-4">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-brand-blue rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Calendar className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
+                </div>
+                <div>
+                  <p className="text-gray-300 text-xs sm:text-sm">Schedule a Discovery Call</p>
+                  <a 
+                    href="https://calendly.com/chris-ladden/30min" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white font-medium hover:text-brand-blue transition-colors duration-200 text-sm sm:text-base"
+                  >
+                    Book a 30-minute call
                   </a>
                 </div>
               </div>
