@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import heroBackground from "@assets/chrisladden-hero-bg.jpg";
 
 export default function HeroSection() {
   const scrollToContact = () => {
@@ -16,8 +17,19 @@ export default function HeroSection() {
   };
 
   return (
-    <section id="home" className="relative min-h-screen bg-brand-charcoal flex items-center justify-center">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <section 
+      id="home" 
+      className="relative min-h-screen flex items-center justify-center"
+      style={{
+        backgroundImage: `url(${heroBackground})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
+      {/* Dark overlay for text readability */}
+      <div className="absolute inset-0 bg-black/50"></div>
+      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
           Smarter Design. <span className="text-brand-blue">Faster Launches.</span> Real Results.
         </h1>
