@@ -122,7 +122,7 @@ export default function FeaturedWorkSection() {
 
         {/* See More Work Button */}
         <div className="flex justify-center mt-12">
-          <button className="inline-flex items-center px-8 py-3 bg-brand-blue text-white font-semibold rounded-lg hover:bg-brand-deep-blue transition-all duration-200 shadow-lg hover:shadow-xl">
+          <button className="inline-flex items-center px-8 py-3 bg-white text-brand-blue font-semibold rounded-lg border-2 border-brand-blue hover:bg-brand-blue hover:text-white transition-all duration-200 shadow-lg hover:shadow-xl">
             See More Work
           </button>
         </div>
