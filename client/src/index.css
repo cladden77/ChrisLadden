@@ -72,6 +72,16 @@
   }
 }
 
+/* Hide scrollbars for featured work section */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
 @layer utilities {
   .text-brand-blue {
     color: hsl(var(--brand-blue));
