@@ -94,14 +94,14 @@ export default function Navigation() {
               Services
             </button>
             <button 
-              onClick={() => scrollToSection("team")}
+              onClick={() => scrollToSection("process")}
               className={`transition-colors duration-200 font-medium ${
                 isScrolled 
                   ? "text-brand-graphite hover:text-brand-blue" 
                   : "text-brand-charcoal lg:text-white hover:text-brand-blue lg:hover:text-blue-200"
               }`}
             >
-              Portfolio
+              Process
             </button>
             <button 
               onClick={() => scrollToSection("contact")}
