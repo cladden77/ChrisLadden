@@ -2,8 +2,7 @@ import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
 import ServicesSection from "@/components/ServicesSection";
 import ProcessSection from "@/components/ProcessSection";
-import DashboardSection from "@/components/DashboardSection";
-import StatsSection from "@/components/StatsSection";
+import TrustSection from "@/components/TrustSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 
@@ -15,8 +14,7 @@ export default function Home() {
         <HeroSection />
         <ServicesSection />
         <ProcessSection />
-        <DashboardSection />
-        <StatsSection />
+        <TrustSection />
         <ContactSection />
       </main>
       <Footer />
