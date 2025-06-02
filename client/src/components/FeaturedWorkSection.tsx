@@ -81,12 +81,7 @@ export default function FeaturedWorkSection() {
 
         <div 
           ref={scrollContainerRef}
-          className="flex gap-6 overflow-x-auto pb-4"
-          style={{ 
-            scrollbarWidth: 'none', 
-            msOverflowStyle: 'none',
-            WebkitScrollbar: { display: 'none' }
-          }}
+          className="flex gap-6 overflow-x-auto scrollbar-hide pb-4"
         >
           {projects.map((project) => (
             <div
