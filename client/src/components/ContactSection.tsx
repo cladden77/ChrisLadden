@@ -1,83 +1,73 @@
 import { Mail, Phone, ArrowRight } from "lucide-react";
 
 export default function ContactSection() {
+  const handleScheduleCall = () => {
+    // This would link to Calendly or another scheduling platform
+    window.open("https://calendly.com/chrisladden", "_blank");
+  };
+
   return (
-    <section id="contact" className="py-16 lg:py-24 bg-brand-charcoal">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
-            Ready to Project?
-          </h2>
-          <p className="text-lg text-gray-300 mb-8">
-            Start your journey with Chris Ladden and unlock your business potential today.
-          </p>
-        </div>
-        
-        <div className="bg-white rounded-xl p-8 shadow-xl">
-          <h3 className="text-2xl font-bold text-brand-charcoal mb-6 text-center">
-            Run Your First Loop
-          </h3>
-          <p className="text-brand-graphite text-center mb-8">
-            Experience what it's like to run our collaborative development process and take the first step to understanding your digital future.
-          </p>
-          
-          <form className="space-y-6">
-            <div className="grid md:grid-cols-2 gap-6">
-              <div>
-                <label className="block text-sm font-medium text-brand-charcoal mb-2">
-                  First Name
-                </label>
-                <input 
-                  type="text"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-blue focus:border-transparent"
-                  placeholder="Your first name"
-                />
+    <section id="contact" className="py-12 sm:py-16 lg:py-24 bg-brand-charcoal">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+          <div>
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-6">
+              Ready to Build Something Amazing?
+            </h2>
+            <p className="text-lg sm:text-xl text-gray-300 mb-8 leading-relaxed">
+              Let's discuss your project and see how I can help you achieve your goals. Book a free discovery call to get started.
+            </p>
+            
+            {/* Contact Information */}
+            <div className="space-y-6 mb-10">
+              <div className="flex items-center space-x-4">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-brand-blue rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Mail className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
+                </div>
+                <div className="min-w-0 flex-1">
+                  <p className="text-gray-300 text-xs sm:text-sm">Email</p>
+                  <a 
+                    href="mailto:chris.ladden@gmail.com" 
+                    className="text-white font-medium hover:text-brand-blue transition-colors duration-200 text-sm sm:text-base break-all"
+                  >
+                    chris.ladden@gmail.com
+                  </a>
+                </div>
               </div>
-              <div>
-                <label className="block text-sm font-medium text-brand-charcoal mb-2">
-                  Last Name  
-                </label>
-                <input 
-                  type="text"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-blue focus:border-transparent"
-                  placeholder="Your last name"
-                />
+              
+              <div className="flex items-center space-x-4">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-brand-blue rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Phone className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
+                </div>
+                <div>
+                  <p className="text-gray-300 text-xs sm:text-sm">Phone</p>
+                  <a 
+                    href="tel:+16026176749" 
+                    className="text-white font-medium hover:text-brand-blue transition-colors duration-200 text-sm sm:text-base"
+                  >
+                    (602) 617-6749
+                  </a>
+                </div>
               </div>
             </div>
             
-            <div>
-              <label className="block text-sm font-medium text-brand-charcoal mb-2">
-                Email
-              </label>
-              <input 
-                type="email"
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-blue focus:border-transparent"
-                placeholder="your.email@example.com"
-              />
-            </div>
-            
-            <div>
-              <label className="block text-sm font-medium text-brand-charcoal mb-2">
-                Company (Optional)
-              </label>
-              <input 
-                type="text"
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-blue focus:border-transparent"
-                placeholder="Your company name"
-              />
-            </div>
-            
+            {/* CTA Button */}
             <button 
-              type="submit"
-              className="w-full bg-brand-blue hover:bg-brand-deep-blue text-white font-semibold py-4 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl"
+              onClick={handleScheduleCall}
+              className="inline-flex items-center bg-brand-blue hover:bg-brand-deep-blue text-white font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 text-sm sm:text-base"
             >
-              Start Your Project
+              <span>Start Your Project</span>
+              <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
             </button>
-          </form>
+          </div>
           
-          <p className="text-xs text-gray-500 text-center mt-6">
-            By submitting this form, you agree to our Terms of Service and Privacy Policy.
-          </p>
+          <div className="order-first lg:order-last lg:pl-12">
+            <img 
+              src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=MnwxMJA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
+              alt="Creative branding and workspace elements" 
+              className="rounded-2xl shadow-lg w-full h-auto" 
+            />
+          </div>
         </div>
       </div>
     </section>

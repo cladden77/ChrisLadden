@@ -58,11 +58,10 @@ export default function ServicesSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-brand-charcoal mb-4">
-            Our Three Loops at a Glance
+            Services That Drive Results
           </h2>
           <p className="text-lg text-brand-graphite max-w-2xl mx-auto">
-            Build a strong foundation and boost your business 
-            to reach sustainable scale and breakthrough.
+            From concept to launch, I provide comprehensive development and design solutions tailored to your unique needs.
           </p>
         </div>
         
@@ -83,7 +82,7 @@ export default function ServicesSection() {
               <p className="text-brand-graphite mb-6 leading-relaxed">
                 {service.description}
               </p>
-              <div className="space-y-2 text-left">
+              <div className="space-y-2 text-left mb-6">
                 {service.features.map((feature, featureIndex) => (
                   <div key={featureIndex} className="flex items-center text-sm text-brand-graphite">
                     <div className="w-1.5 h-1.5 bg-brand-blue rounded-full mr-3 flex-shrink-0"></div>
@@ -91,6 +90,12 @@ export default function ServicesSection() {
                   </div>
                 ))}
               </div>
+              <button 
+                onClick={scrollToContact}
+                className="text-brand-blue font-medium hover:text-brand-deep-blue transition-colors duration-200 inline-flex items-center"
+              >
+                Learn More <ArrowRight className="ml-2 w-4 h-4" />
+              </button>
             </div>
           ))}
         </div>

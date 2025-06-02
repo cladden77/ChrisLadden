@@ -19,13 +19,10 @@ export default function HeroSection() {
     <section id="home" className="relative min-h-screen bg-brand-charcoal flex items-center justify-center">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-          Three Services. One Purpose.
+          Smarter Design. <span className="text-brand-blue">Faster Launches.</span> Real Results.
         </h1>
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-brand-blue mb-8">
-          Unlock Your Potential.
-        </h2>
         <p className="text-lg sm:text-xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed">
-          Unlock the power of custom development, branding, and design to turn your vision into reality. From concept to launch, I deliver solutions that drive growth.
+          I create modern, responsive websites and applications that turn your vision into reality. From concept to launch, I deliver solutions that drive growth.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
