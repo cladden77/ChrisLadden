@@ -42,9 +42,9 @@ export default function Contact() {
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
-      <main className="pt-20">
+      <main>
         {/* Header Section */}
-        <section className="py-16 lg:py-24 bg-brand-charcoal">
+        <section className="pt-32 pb-16 lg:pt-40 lg:pb-24 bg-brand-charcoal">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6">
               Let's Work Together
