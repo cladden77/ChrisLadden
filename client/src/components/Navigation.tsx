@@ -60,7 +60,16 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <Link href="/" className="h-10 flex items-center">
+            <Link 
+              href="/" 
+              className="h-10 flex items-center"
+              onClick={() => {
+                // Scroll to top when navigating to home
+                setTimeout(() => {
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }, 100);
+              }}
+            >
               <img 
                 src={isScrolled ? blackLogo : whiteLogo} 
                 alt="Chris Ladden Logo" 
