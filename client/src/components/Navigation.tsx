@@ -1,11 +1,13 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import { Link, useLocation } from "wouter";
 import blackLogo from "@assets/chrisladden-logo.png";
 import whiteLogo from "@assets/chrisladden-logo-white.png";
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [location] = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -104,8 +106,8 @@ export default function Navigation() {
             >
               Process
             </button>
-            <button 
-              onClick={() => scrollToSection("contact")}
+            <Link 
+              href="/contact"
               className={`transition-colors duration-200 font-medium ${
                 isScrolled 
                   ? "text-brand-graphite hover:text-brand-blue" 
@@ -113,7 +115,7 @@ export default function Navigation() {
               }`}
             >
               Contact
-            </button>
+            </Link>
           </div>
           
           {/* Mobile Menu Button */}
@@ -152,12 +154,13 @@ export default function Navigation() {
             >
               Process
             </button>
-            <button 
-              onClick={() => scrollToSection("contact")}
+            <Link 
+              href="/contact"
               className="block w-full text-left text-brand-graphite hover:text-brand-blue transition-colors duration-200 font-medium"
+              onClick={() => setIsMenuOpen(false)}
             >
               Contact
-            </button>
+            </Link>
           </div>
         </div>
       )}
