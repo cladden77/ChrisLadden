@@ -32,6 +32,12 @@ export default function Navigation() {
   }, []);
 
   const scrollToSection = (sectionId: string) => {
+    // If we're not on the home page, navigate to home page with section anchor
+    if (location !== "/") {
+      window.location.href = `/#${sectionId}`;
+      return;
+    }
+    
     const element = document.getElementById(sectionId);
     if (element) {
       const offset = 80; // Account for sticky navbar
