@@ -60,24 +60,23 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <div className="h-10 flex items-center">
+            <Link href="/" className="h-10 flex items-center">
               <img 
                 src={isScrolled ? blackLogo : whiteLogo} 
                 alt="Chris Ladden Logo" 
-                className="h-full w-auto"
+                className="h-full w-auto cursor-pointer"
                 onError={(e) => {
                   e.currentTarget.style.display = 'none';
                   const fallback = e.currentTarget.nextElementSibling as HTMLElement;
                   if (fallback) fallback.style.display = 'flex';
                 }}
               />
-              <div className={`w-10 h-10 rounded-lg flex items-center justify-center text-white font-bold text-lg hidden transition-colors duration-300 ${
+              <div className={`w-10 h-10 rounded-lg flex items-center justify-center text-white font-bold text-lg hidden transition-colors duration-300 cursor-pointer ${
                 isScrolled ? "bg-brand-charcoal" : "bg-white bg-opacity-20"
               }`}>
                 CL
               </div>
-            </div>
-
+            </Link>
           </div>
           
           {/* Desktop Navigation */}
