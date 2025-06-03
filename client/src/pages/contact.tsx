@@ -44,12 +44,12 @@ export default function Contact() {
       <Navigation />
       <main className="pt-20">
         {/* Header Section */}
-        <section className="py-16 lg:py-24 bg-gray-50">
+        <section className="py-16 lg:py-24 bg-brand-charcoal">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-4xl lg:text-5xl font-bold text-brand-charcoal mb-6">
+            <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6">
               Let's Work Together
             </h1>
-            <p className="text-lg text-brand-graphite max-w-2xl mx-auto leading-relaxed">
+            <p className="text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
               Ready to start your project? Fill out the form below and I'll get back to you within 24 hours to discuss your needs and how we can bring your vision to life.
             </p>
           </div>
