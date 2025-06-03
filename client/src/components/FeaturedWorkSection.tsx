@@ -1,5 +1,6 @@
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useRef } from "react";
+import { Link } from "wouter";
 
 export default function FeaturedWorkSection() {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
@@ -21,33 +22,33 @@ export default function FeaturedWorkSection() {
       id: 1,
       title: "Vinyl™",
       description: "Vinyl is an AI-powered web app designed to capture, organize, and utilize conversations like never before.",
-      image: "/api/placeholder/600/400",
       tags: ["Product Design", "Web Design & Development"],
-      gradient: "from-gray-200 to-gray-300"
+      gradient: "from-gray-200 to-gray-300",
+      link: "/case-study/vinyl"
     },
     {
       id: 2,
       title: "X-Centric™",
       description: "X-Centric provides technology consultations, implementation, and support services tailored to businesses of all sizes.",
-      image: "/api/placeholder/600/400",
       tags: ["Web Design & Development", "Digital Marketing"],
-      gradient: "from-gray-800 to-gray-900"
+      gradient: "from-gray-800 to-gray-900",
+      link: "/case-study/xcentric"
     },
     {
       id: 3,
       title: "VibeCorp™",
       description: "A modern corporate website showcasing innovative business solutions with cutting-edge design.",
-      image: "/api/placeholder/600/400",
       tags: ["Brand Design", "Web Development"],
-      gradient: "from-purple-600 to-blue-700"
+      gradient: "from-purple-600 to-blue-700",
+      link: "/case-study/vibecorp"
     },
     {
       id: 4,
       title: "TechFlow™",
       description: "Enterprise software solution designed to streamline workflow management and boost productivity.",
-      image: "/api/placeholder/600/400",
       tags: ["UI/UX Design", "Full-Stack Development"],
-      gradient: "from-emerald-500 to-teal-600"
+      gradient: "from-emerald-500 to-teal-600",
+      link: "/case-study/techflow"
     }
   ];
 
@@ -84,34 +85,33 @@ export default function FeaturedWorkSection() {
           className="flex gap-6 overflow-x-auto scrollbar-hide pb-4"
         >
           {projects.map((project) => (
-            <div
-              key={project.id}
-              className="flex-none w-80 sm:w-96 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group cursor-pointer"
-            >
-              <div className={`h-64 bg-gradient-to-br ${project.gradient} relative overflow-hidden`}>
-                <div className="absolute top-4 left-4 flex flex-wrap gap-2">
-                  {project.tags.map((tag, index) => (
-                    <span
-                      key={index}
-                      className="px-3 py-1 bg-black/20 backdrop-blur-sm text-white text-xs rounded-full"
-                    >
-                      {tag}
-                    </span>
-                  ))}
+            <Link key={project.id} href={project.link}>
+              <div className="flex-none w-80 sm:w-96 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group cursor-pointer">
+                <div className={`h-64 bg-gradient-to-br ${project.gradient} relative overflow-hidden`}>
+                  <div className="absolute top-4 left-4 flex flex-wrap gap-2">
+                    {project.tags.map((tag, index) => (
+                      <span
+                        key={index}
+                        className="px-3 py-1 bg-black/20 backdrop-blur-sm text-white text-xs rounded-full"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300"></div>
+                  <div className="absolute bottom-4 left-4 right-4">
+                    <h3 className="text-2xl font-bold text-white mb-2">
+                      {project.title}
+                    </h3>
+                  </div>
                 </div>
-                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300"></div>
-                <div className="absolute bottom-4 left-4 right-4">
-                  <h3 className="text-2xl font-bold text-white mb-2">
-                    {project.title}
-                  </h3>
+                <div className="p-6">
+                  <p className="text-brand-graphite leading-relaxed">
+                    {project.description}
+                  </p>
                 </div>
               </div>
-              <div className="p-6">
-                <p className="text-brand-graphite leading-relaxed">
-                  {project.description}
-                </p>
-              </div>
-            </div>
+            </Link>
           ))}
         </div>
 
