@@ -53,7 +53,7 @@ export default function FeaturedWorkSection() {
   ];
 
   return (
-    <section className="pt-16 lg:pt-24 pb-8 lg:pb-12 bg-gray-50">
+    <section className="pt-16 lg:pt-24 pb-8 lg:pb-12 bg-blue-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center mb-12">
           <div>
