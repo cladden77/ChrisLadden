@@ -31,7 +31,9 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-black/50"></div>
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-          Smarter Design. <span className="text-brand-blue">Faster Launches.</span> Real Results.
+          Smarter Design.<br />
+          <span className="text-brand-blue">Faster Launches.</span><br />
+          Real Results.
         </h1>
         <p className="text-lg sm:text-xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed">
           I create modern, responsive websites and applications that turn your vision into reality. From concept to launch, I deliver solutions that drive growth.
