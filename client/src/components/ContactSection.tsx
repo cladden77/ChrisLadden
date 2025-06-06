@@ -1,4 +1,5 @@
 import { Mail, ArrowRight, Calendar } from "lucide-react";
+import { Link } from "wouter";
 
 export default function ContactSection() {
   const handleScheduleCall = () => {
@@ -53,13 +54,13 @@ export default function ContactSection() {
             </div>
             
             {/* CTA Button */}
-            <button 
-              onClick={handleScheduleCall}
+            <Link
+              href="/contact"
               className="inline-flex items-center bg-brand-blue hover:bg-brand-deep-blue text-white font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 text-sm sm:text-base"
             >
               <span>Start Your Project</span>
               <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
-            </button>
+            </Link>
           </div>
           
           <div className="order-first lg:order-last lg:pl-12">
