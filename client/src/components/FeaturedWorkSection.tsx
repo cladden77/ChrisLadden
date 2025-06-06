@@ -34,18 +34,11 @@ export default function FeaturedWorkSection() {
     },
     {
       id: 3,
-      title: "VibeCorp™",
-      description: "A modern corporate website showcasing innovative business solutions with cutting-edge design.",
-      gradient: "from-purple-600 to-blue-700",
-      link: "/case-study/vibecorp"
+      title: "ShareArizona",
+      description: "ShareArizona is a real estate platform based in Northern Arizona, built to connect landowners with buyers through a clean brand identity and a dynamic, listing-ready website.",
+      image: "/ShareArizona-Mockup.jpg",
+      link: "/case-study/sharearizona"
     },
-    {
-      id: 4,
-      title: "TechFlow™",
-      description: "Enterprise software solution designed to streamline workflow management and boost productivity.",
-      gradient: "from-emerald-500 to-teal-600",
-      link: "/case-study/techflow"
-    }
   ];
 
   return (
@@ -100,7 +93,7 @@ export default function FeaturedWorkSection() {
                     </div>
                   </div>
                 ) : (
-                  <div className={`h-64 bg-gradient-to-br ${project.gradient} relative overflow-hidden`}>
+                  <div className={`h-64 bg-gradient-to-br relative overflow-hidden`}>
                     <div className="absolute top-4 left-4 flex flex-wrap gap-2">
                     </div>
                     <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300"></div>

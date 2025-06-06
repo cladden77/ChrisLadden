@@ -47,7 +47,7 @@ export default function CaseStudyJfConsulting() {
               </div>
               <div className="order-first lg:order-last">
                 <div className="rounded-2xl h-96 flex items-center justify-center overflow-hidden bg-gray-100">
-                  <img src="/jfconsulting-mockup-lg.jpg" alt="Xora mockup large" className="object-cover w-full h-full" />
+                  <img src="/jfconsulting-mockup-lg.jpg" alt="JF Consulting mockup" className="object-cover w-full h-full" />
                 </div>
               </div>
             </div>
