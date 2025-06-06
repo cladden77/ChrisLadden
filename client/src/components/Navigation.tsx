@@ -120,6 +120,16 @@ export default function Navigation() {
             >
               Process
             </button>
+            <button 
+              onClick={() => scrollToSection("work")}
+              className={`transition-colors duration-200 font-medium ${
+                isScrolled 
+                  ? "text-brand-graphite hover:text-brand-blue" 
+                  : "text-brand-charcoal lg:text-white hover:text-brand-blue lg:hover:text-blue-200"
+              }`}
+            >
+              Work
+            </button>
             <Link 
               href="/contact"
               className={`transition-colors duration-200 font-medium ${
@@ -167,6 +177,12 @@ export default function Navigation() {
               className="block w-full text-left text-brand-graphite hover:text-brand-blue transition-colors duration-200 font-medium"
             >
               Process
+            </button>
+            <button 
+              onClick={() => scrollToSection("work")}
+              className="block w-full text-left text-brand-graphite hover:text-brand-blue transition-colors duration-200 font-medium"
+            >
+              Work
             </button>
             <Link 
               href="/contact"
