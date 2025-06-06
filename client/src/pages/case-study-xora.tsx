@@ -40,7 +40,7 @@ export default function CaseStudyXora() {
                     rel="noopener noreferrer"
                     className="inline-flex items-center px-6 py-3 bg-brand-blue text-white font-semibold rounded-lg hover:bg-brand-deep-blue transition-colors duration-200"
                   >
-                    View Live Site
+                    View Github Code
                     <ExternalLink className="ml-2 w-4 h-4" />
                   </a>
                 </div>
