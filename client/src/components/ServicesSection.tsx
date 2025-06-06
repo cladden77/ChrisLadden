@@ -58,7 +58,7 @@ export default function ServicesSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-brand-charcoal mb-4">
-            Services That Drive Results
+          Ongoing Support That Moves Your Business Forward
           </h2>
           <p className="text-lg text-brand-graphite max-w-2xl mx-auto">
             From concept to launch, I provide comprehensive development and design solutions tailored to your unique needs.
@@ -90,12 +90,12 @@ export default function ServicesSection() {
                   </div>
                 ))}
               </div>
-              <button 
+              {/* <button 
                 onClick={scrollToContact}
                 className="text-brand-blue font-medium hover:text-brand-deep-blue transition-colors duration-200 inline-flex items-center"
               >
                 Learn More <ArrowRight className="ml-2 w-4 h-4" />
-              </button>
+              </button> */}
             </div>
           ))}
         </div>

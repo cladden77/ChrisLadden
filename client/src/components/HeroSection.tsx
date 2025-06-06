@@ -36,7 +36,7 @@ export default function HeroSection() {
           Real Results.
         </h1>
         <p className="text-lg sm:text-xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed">
-          I create modern, responsive websites and applications that turn your vision into reality. From concept to launch, I deliver solutions that drive growth.
+        I help modern brands scale through ongoing design, development, and automation support. Whether you’re launching or leveling up, I deliver systems that drive results.
         </p>
         
         <div className="flex flex-col gap-4 justify-center items-center">
