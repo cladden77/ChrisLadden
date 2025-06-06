@@ -1,35 +1,32 @@
-import { MessageCircle, Search, Target, PenTool, Code, RefreshCw, Rocket, BarChart3, Headphones } from "lucide-react";
+import { MessageCircle, Search, Target, PenTool, RefreshCw, Headphones } from "lucide-react";
 
 export default function ProcessSection() {
   const steps = [
     {
       number: 1,
-      title: "Discovery",
-      description: "We start with a deep dive into your goals, target audience, and project requirements. This ensures we're aligned from day one.",
+      title: "Kickoff + Strategy Alignment",
+      description: "We align on your top priorities for the month and set clear expectations.",
       features: [
-        { icon: <MessageCircle className="w-4 h-4" />, text: "Strategy consultation" },
-        { icon: <Search className="w-4 h-4" />, text: "Market research" },
-        { icon: <Target className="w-4 h-4" />, text: "Goal definition" }
+        { icon: <MessageCircle className="w-4 h-4" />, text: "Shared Notion workspace" },
+        { icon: <Target className="w-4 h-4" />, text: "Clear goals & deliverables" }
       ]
     },
     {
       number: 2,
-      title: "Design & Build",
-      description: "I create beautiful designs and develop them into functional, high-performing websites with regular updates and feedback loops.",
+      title: "Weekly Check-ins & Creative Output",
+      description: "You get consistent updates, fast turnarounds, and deliverables sent weekly.",
       features: [
-        { icon: <PenTool className="w-4 h-4" />, text: "Wireframes & mockups" },
-        { icon: <Code className="w-4 h-4" />, text: "Development & testing" },
-        { icon: <RefreshCw className="w-4 h-4" />, text: "Regular check-ins" }
+        { icon: <PenTool className="w-4 h-4" />, text: "Design & dev tasks prioritized" },
+        { icon: <RefreshCw className="w-4 h-4" />, text: "Ongoing communication & feedback" }
       ]
     },
     {
       number: 3,
-      title: "Launch & Support",
-      description: "Your website goes live with full testing, optimization, and ongoing support to ensure everything runs smoothly post-launch.",
+      title: "Wrap-Up & Planning Ahead",
+      description: "We recap what was delivered, track hours used, and plan next month’s focus.",
       features: [
-        { icon: <Rocket className="w-4 h-4" />, text: "Site deployment" },
-        { icon: <BarChart3 className="w-4 h-4" />, text: "Performance monitoring" },
-        { icon: <Headphones className="w-4 h-4" />, text: "Ongoing support" }
+        { icon: <Headphones className="w-4 h-4" />, text: "Monthly summary" },
+        { icon: <Search className="w-4 h-4" />, text: "Adjust scope as needed" }
       ]
     }
   ];

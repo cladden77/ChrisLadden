@@ -19,38 +19,37 @@ export default function ServicesSection() {
 
   const services = [
     {
-      icon: <SiWordpress className="text-4xl" />,
-      title: "WordPress Development",
-      description: "Custom WordPress solutions that are fast, secure, and easy to manage. From simple blogs to complex business sites.",
+      icon: <Palette className="w-10 h-10" />,
+      title: "Brand & Marketing Design",
+      description: "Social graphics, email visuals, ads, and print materials—designed to keep your brand sharp and consistent.",
       features: [
-        "Custom theme development",
-        "SEO optimization", 
-        "E-commerce integration",
-        "Performance optimization"
+        "Social media graphics, ads, and promos",
+        "Email visuals and slide decks",
+        "Marketing & print-ready materials",
+        "Brand guidelines"
+      ]
+    },
+    {
+      icon: <SiWordpress className="text-4xl" />,
+      title: "Web Design & Development",
+      description: "Responsive websites and landing pages built with WordPress, React, and Next.js—fast, clean, and scalable.",
+      features: [
+        "Custom websites (WordPress, React, Next.js)",
+        "Landing pages & UI components", 
+        "Responsive design optimization",
+        "SEO Optimization"
       ]
     },
     {
       icon: <SiReact className="text-4xl" />,
-      title: "React Development", 
-      description: "Modern, interactive web applications built with React. Scalable, maintainable solutions for complex business needs.",
+      title: "AI-Enhanced Systems & Automation", 
+      description: "Custom Notion dashboards, Tally forms, and automations using tools like Zapier to save time and boost output.",
       features: [
-        "Modern JavaScript frameworks",
-        "API integration",
-        "Performance optimization", 
-        "Mobile-responsive design"
+        "Notion dashboards & workflows",
+        "Tally + Zapier integrations",
+        "Custom automation solutions"
       ]
     },
-    {
-      icon: <Palette className="w-10 h-10" />,
-      title: "Brand Design",
-      description: "Complete brand identity packages including logos, color schemes, typography, and comprehensive brand guidelines.",
-      features: [
-        "Logo & identity design",
-        "UI/UX design",
-        "Marketing materials",
-        "Brand guidelines"
-      ]
-    }
   ];
 
   return (

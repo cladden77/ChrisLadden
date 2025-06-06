@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import { ArrowLeft, ExternalLink, Calendar, Users, Code, Palette } from "lucide-react";
 import { Link } from "wouter";
 
-export default function CaseStudyVinyl() {
+export default function CaseStudyJfConsulting() {
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
@@ -23,36 +23,31 @@ export default function CaseStudyVinyl() {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <div className="flex flex-wrap gap-2 mb-6">
-                  <span className="px-3 py-1 bg-brand-blue/20 text-brand-blue text-sm rounded-full">
-                    Product Design
-                  </span>
-                  <span className="px-3 py-1 bg-brand-blue/20 text-brand-blue text-sm rounded-full">
+                  <span className="py-1 bg-brand-blue/20 text-brand-blue text-sm rounded-full">
                     Web Design & Development
                   </span>
                 </div>
                 <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-                  Vinyl™
+                  JF Consulting
                 </h1>
                 <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-                  An AI-powered web application designed to capture, organize, and utilize conversations like never before. Built to revolutionize how teams collaborate and extract insights from their communications.
+                JF Consulting is a growing tax and bookkeeping firm that needed a modern, easy-to-navigate website to support client growth and streamline service access for both new and existing customers.
                 </p>
                 <div className="flex flex-wrap gap-4">
-                  <button className="inline-flex items-center px-6 py-3 bg-brand-blue text-white font-semibold rounded-lg hover:bg-brand-deep-blue transition-colors duration-200">
-                    View Live Site
+                  <a
+                    href="https://github.com/cladden77/JFCOKC"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center px-6 py-3 bg-brand-blue text-white font-semibold rounded-lg hover:bg-brand-deep-blue transition-colors duration-200"
+                  >
+                    View Github Code
                     <ExternalLink className="ml-2 w-4 h-4" />
-                  </button>
-                  <button className="inline-flex items-center px-6 py-3 bg-white/10 text-white font-semibold rounded-lg hover:bg-white/20 transition-colors duration-200">
-                    View Prototype
-                    <ExternalLink className="ml-2 w-4 h-4" />
-                  </button>
+                  </a>
                 </div>
               </div>
               <div className="order-first lg:order-last">
-                <div className="bg-gradient-to-br from-gray-200 to-gray-300 rounded-2xl h-96 flex items-center justify-center">
-                  <div className="text-center">
-                    <h3 className="text-2xl font-bold text-gray-700 mb-2">Vinyl™</h3>
-                    <p className="text-gray-600">AI-powered conversation platform</p>
-                  </div>
+                <div className="rounded-2xl h-96 flex items-center justify-center overflow-hidden bg-gray-100">
+                  <img src="/jfconsulting-mockup-lg.jpg" alt="JF Consulting mockup" className="object-cover w-full h-full" />
                 </div>
               </div>
             </div>
@@ -68,7 +63,7 @@ export default function CaseStudyVinyl() {
                   <Calendar className="w-8 h-8 text-brand-blue" />
                 </div>
                 <h3 className="font-semibold text-brand-charcoal mb-2">Timeline</h3>
-                <p className="text-brand-graphite">3 months</p>
+                <p className="text-brand-graphite">1 Month</p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-brand-blue/10 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -82,7 +77,7 @@ export default function CaseStudyVinyl() {
                   <Code className="w-8 h-8 text-brand-blue" />
                 </div>
                 <h3 className="font-semibold text-brand-charcoal mb-2">Technology</h3>
-                <p className="text-brand-graphite">React, Node.js, AI APIs</p>
+                <p className="text-brand-graphite">WordPress, PHP, ACF</p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-brand-blue/10 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -97,53 +92,36 @@ export default function CaseStudyVinyl() {
               <div>
                 <h2 className="text-3xl font-bold text-brand-charcoal mb-6">The Challenge</h2>
                 <p className="text-brand-graphite leading-relaxed mb-6">
-                  Teams struggle to extract meaningful insights from their daily conversations and meetings. Important decisions and ideas get lost in chat threads, emails, and video calls, making it difficult to track progress and maintain alignment.
+                As JF Consulting expanded its client base, the original website lacked the polish and usability needed to support professional credibility and client onboarding. The site needed a modern design, clear structure, and easy access to services for both new and returning clients.
                 </p>
                 <p className="text-brand-graphite leading-relaxed">
-                  The goal was to create an intelligent platform that could automatically capture, categorize, and surface key insights from team communications, making collaboration more effective and strategic.
+                The goal was to design a clean, trustworthy digital experience that made it simple to learn about services, get in touch, and access key resources—while setting the foundation for future growth.
                 </p>
               </div>
               <div>
                 <h2 className="text-3xl font-bold text-brand-charcoal mb-6">The Solution</h2>
                 <p className="text-brand-graphite leading-relaxed mb-6">
-                  Vinyl™ leverages advanced AI to automatically process conversations, extract key themes, and provide intelligent summaries. The platform features real-time collaboration tools, smart search capabilities, and actionable insights dashboard.
+                I delivered a fully redesigned website with custom page templates, mobile responsiveness, and a streamlined layout tailored to JF Consulting’s brand and audience.
+                </p>
+                <p className="text-brand-graphite leading-relaxed mb-6">
+                Each section was thoughtfully structured to guide users through the firm’s offerings, with intuitive navigation and clear calls to action. The development phase focused on performance, ease of maintenance, and client-ready functionality.
                 </p>
                 <p className="text-brand-graphite leading-relaxed">
-                  The result is a comprehensive solution that transforms scattered conversations into organized, searchable knowledge that drives better decision-making and team alignment.
+                The result is a professional, future-ready website that builds trust, improves usability, and supports the firm’s continued growth.
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Results */}
-        <section className="py-16 lg:py-24 bg-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl lg:text-4xl font-bold text-brand-charcoal mb-6">
-                Project Results
-              </h2>
-              <p className="text-lg text-brand-graphite max-w-2xl mx-auto">
-                The platform successfully launched with positive user feedback and measurable improvements in team productivity.
-              </p>
-            </div>
-            
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="text-center">
-                <div className="text-4xl font-bold text-brand-blue mb-2">85%</div>
-                <p className="text-brand-graphite">Reduction in meeting time</p>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl font-bold text-brand-blue mb-2">92%</div>
-                <p className="text-brand-graphite">User satisfaction rate</p>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl font-bold text-brand-blue mb-2">3x</div>
-                <p className="text-brand-graphite">Faster insight discovery</p>
-              </div>
-            </div>
-          </div>
-        </section>
+        {/* Project Image */}
+        <div className="flex justify-center my-12">
+          <img 
+            src="/JFCO-Site-layouts-display.jpg" 
+            alt="Xora site layouts display" 
+            className="max-w-full h-auto w-full md:w-3/4 lg:w-1/2 object-contain"
+          />
+        </div>
 
         {/* CTA */}
         <section className="py-16 bg-gray-50">
