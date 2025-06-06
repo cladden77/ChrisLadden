@@ -1,5 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import heroBackground from "@assets/chrisladden-hero-bg.jpg";
+import { Link } from "wouter";
 
 export default function HeroSection() {
   const scrollToContact = () => {
@@ -36,17 +37,17 @@ export default function HeroSection() {
           Real Results.
         </h1>
         <p className="text-lg sm:text-xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed">
-        I help modern brands scale through ongoing design, development, and automation support. Whether you’re launching or leveling up, I deliver systems that drive results.
+        I help modern brands scale through ongoing design, development, and automation support. Whether you're launching or leveling up, I deliver systems that drive results.
         </p>
         
         <div className="flex flex-col gap-4 justify-center items-center">
-          <button 
-            onClick={scrollToContact}
+          <Link 
+            href="/contact"
             className="inline-flex items-center px-8 py-4 bg-brand-blue text-white font-semibold rounded-lg hover:bg-brand-deep-blue transition-all duration-200 shadow-lg hover:shadow-xl"
           >
             Start Your Project
             <ArrowRight className="ml-2 w-5 h-5" />
-          </button>
+          </Link>
           <p className="text-gray-400 text-sm text-center">
             Free consultation • Quick turnaround
           </p>
