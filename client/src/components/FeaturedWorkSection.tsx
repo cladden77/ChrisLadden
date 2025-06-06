@@ -39,6 +39,13 @@ export default function FeaturedWorkSection() {
       image: "/ShareArizona-Mockup.jpg",
       link: "/case-study/sharearizona"
     },
+    {
+      id: 4,
+      title: "ShareArizona",
+      description: "ShareArizona is a real estate platform based in Northern Arizona, built to connect landowners with buyers through a clean brand identity and a dynamic, listing-ready website.",
+      image: "/ShareArizona-Mockup.jpg",
+      link: "/case-study/sharearizona"
+    },
   ];
 
   return (
@@ -71,15 +78,15 @@ export default function FeaturedWorkSection() {
 
         <div 
           ref={scrollContainerRef}
-          className="flex gap-6 overflow-x-auto scrollbar-hide pb-4"
+          className="flex gap-6 overflow-x-auto scrollbar-hide pb-4 pr-16"
         >
-          {projects.map((project) => (
+          {projects.map((project, idx) => (
             <Link key={project.id} href={project.link} onClick={() => {
               setTimeout(() => {
                 window.scrollTo({ top: 0, behavior: 'auto' });
               }, 0);
             }}>
-              <div className="flex-none w-80 sm:w-96 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group cursor-pointer flex flex-col min-h-[28rem]">
+              <div className={`flex-none w-80 sm:w-96 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group cursor-pointer flex flex-col min-h-[28rem]${idx === projects.length - 1 ? ' mr-[-4rem]' : ''}`}>
                 {project.image ? (
                   <div className="h-64 relative overflow-hidden">
                     <img src={project.image} alt={project.title + ' mockup'} className="object-cover w-full h-full" />
