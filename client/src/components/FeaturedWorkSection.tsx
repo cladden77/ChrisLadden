@@ -53,7 +53,7 @@ export default function FeaturedWorkSection() {
   ];
 
   return (
-    <section className="pt-16 lg:pt-24 pb-8 lg:pb-12 bg-blue-50">
+    <section id="work" className="pt-16 lg:pt-24 pb-8 lg:pb-12 bg-blue-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center mb-12">
           <div>
@@ -85,7 +85,11 @@ export default function FeaturedWorkSection() {
           className="flex gap-6 overflow-x-auto scrollbar-hide pb-4"
         >
           {projects.map((project) => (
-            <Link key={project.id} href={project.link}>
+            <Link key={project.id} href={project.link} onClick={() => {
+              setTimeout(() => {
+                window.scrollTo({ top: 0, behavior: 'auto' });
+              }, 0);
+            }}>
               <div className="flex-none w-80 sm:w-96 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group cursor-pointer">
                 <div className={`h-64 bg-gradient-to-br ${project.gradient} relative overflow-hidden`}>
                   <div className="absolute top-4 left-4 flex flex-wrap gap-2">
