@@ -20,7 +20,7 @@ export default function TrustSection() {
   ];
 
   return (
-    <section className="pt-8 lg:pt-12 pb-12 sm:pb-16 lg:pb-24 bg-white">
+    <section className="pt-8 lg:pt-20 pb-12 sm:pb-16 lg:pb-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div className="order-2 md:order-1">
