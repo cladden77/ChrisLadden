@@ -79,7 +79,7 @@ export default function FeaturedWorkSection() {
                 window.scrollTo({ top: 0, behavior: 'auto' });
               }, 0);
             }}>
-              <div className="flex-none w-80 sm:w-96 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group cursor-pointer">
+              <div className="flex-none w-80 sm:w-96 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group cursor-pointer flex flex-col min-h-[28rem]">
                 {project.image ? (
                   <div className="h-64 relative overflow-hidden">
                     <img src={project.image} alt={project.title + ' mockup'} className="object-cover w-full h-full" />
@@ -104,8 +104,8 @@ export default function FeaturedWorkSection() {
                     </div>
                   </div>
                 )}
-                <div className="p-6">
-                  <p className="text-brand-graphite leading-relaxed">
+                <div className="p-6 flex-1 flex flex-col justify-between">
+                  <p className="text-brand-graphite leading-relaxed mb-0">
                     {project.description}
                   </p>
                 </div>
