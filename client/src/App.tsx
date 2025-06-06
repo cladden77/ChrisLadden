@@ -6,7 +6,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import Home from "@/pages/home";
 import Contact from "@/pages/contact";
 import CaseStudyXora from "@/pages/case-study-xora";
-import CaseStudyXCentric from "@/pages/case-study-xcentric";
+import CaseStudyJfConsulting from "@/pages/case-study-jfconsulting";
 import CaseStudyVibeCorp from "@/pages/case-study-vibecorp";
 import CaseStudyTechFlow from "@/pages/case-study-techflow";
 import ThankYou from "@/pages/thank-you";
@@ -19,7 +19,7 @@ function Router() {
       <Route path="/contact" component={Contact} />
       <Route path="/thank-you" component={ThankYou} />
       <Route path="/case-study/xora" component={CaseStudyXora} />
-      <Route path="/case-study/xcentric" component={CaseStudyXCentric} />
+      <Route path="/case-study/jfconsulting" component={CaseStudyJfConsulting} />
       <Route path="/case-study/vibecorp" component={CaseStudyVibeCorp} />
       <Route path="/case-study/techflow" component={CaseStudyTechFlow} />
       <Route component={NotFound} />

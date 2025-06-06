@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import { ArrowLeft, ExternalLink, Calendar, Users, Code, Palette } from "lucide-react";
 import { Link } from "wouter";
 
-export default function CaseStudyXCentric() {
+export default function CaseStudyJfConsulting() {
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
@@ -23,36 +23,31 @@ export default function CaseStudyXCentric() {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <div className="flex flex-wrap gap-2 mb-6">
-                  <span className="px-3 py-1 bg-brand-blue/20 text-brand-blue text-sm rounded-full">
+                  <span className="py-1 bg-brand-blue/20 text-brand-blue text-sm rounded-full">
                     Web Design & Development
-                  </span>
-                  <span className="px-3 py-1 bg-brand-blue/20 text-brand-blue text-sm rounded-full">
-                    Digital Marketing
                   </span>
                 </div>
                 <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-                  X-Centric™
+                  JF Consulting
                 </h1>
                 <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-                  A comprehensive technology consultancy platform providing implementation and support services tailored to businesses of all sizes. Built to transform how companies approach digital transformation.
+                JF Consulting is a growing tax and bookkeeping firm that needed a modern, easy-to-navigate website to support client growth and streamline service access for both new and existing customers.
                 </p>
                 <div className="flex flex-wrap gap-4">
-                  <button className="inline-flex items-center px-6 py-3 bg-brand-blue text-white font-semibold rounded-lg hover:bg-brand-deep-blue transition-colors duration-200">
-                    View Live Site
+                  <a
+                    href="https://github.com/cladden77/JFCOKC"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center px-6 py-3 bg-brand-blue text-white font-semibold rounded-lg hover:bg-brand-deep-blue transition-colors duration-200"
+                  >
+                    View Github Code
                     <ExternalLink className="ml-2 w-4 h-4" />
-                  </button>
-                  <button className="inline-flex items-center px-6 py-3 bg-white/10 text-white font-semibold rounded-lg hover:bg-white/20 transition-colors duration-200">
-                    View Case Study
-                    <ExternalLink className="ml-2 w-4 h-4" />
-                  </button>
+                  </a>
                 </div>
               </div>
               <div className="order-first lg:order-last">
-                <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl h-96 flex items-center justify-center text-white">
-                  <div className="text-center">
-                    <h3 className="text-2xl font-bold mb-2">X-Centric™</h3>
-                    <p className="text-gray-300">Transform Your Business With Us</p>
-                  </div>
+                <div className="rounded-2xl h-96 flex items-center justify-center overflow-hidden bg-gray-100">
+                  <img src="/jfconsulting-mockup-lg.jpg" alt="Xora mockup large" className="object-cover w-full h-full" />
                 </div>
               </div>
             </div>
@@ -68,28 +63,28 @@ export default function CaseStudyXCentric() {
                   <Calendar className="w-8 h-8 text-brand-blue" />
                 </div>
                 <h3 className="font-semibold text-brand-charcoal mb-2">Timeline</h3>
-                <p className="text-brand-graphite">4 months</p>
+                <p className="text-brand-graphite">1 Month</p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-brand-blue/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Users className="w-8 h-8 text-brand-blue" />
                 </div>
                 <h3 className="font-semibold text-brand-charcoal mb-2">Team</h3>
-                <p className="text-brand-graphite">Lead Developer</p>
+                <p className="text-brand-graphite">Solo project</p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-brand-blue/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Code className="w-8 h-8 text-brand-blue" />
                 </div>
                 <h3 className="font-semibold text-brand-charcoal mb-2">Technology</h3>
-                <p className="text-brand-graphite">React, Next.js, CMS</p>
+                <p className="text-brand-graphite">WordPress, PHP, ACF</p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-brand-blue/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Palette className="w-8 h-8 text-brand-blue" />
                 </div>
                 <h3 className="font-semibold text-brand-charcoal mb-2">Design</h3>
-                <p className="text-brand-graphite">Corporate Branding</p>
+                <p className="text-brand-graphite">Custom UI/UX</p>
               </div>
             </div>
 
@@ -97,53 +92,36 @@ export default function CaseStudyXCentric() {
               <div>
                 <h2 className="text-3xl font-bold text-brand-charcoal mb-6">The Challenge</h2>
                 <p className="text-brand-graphite leading-relaxed mb-6">
-                  X-Centric needed a professional web presence that could effectively communicate their technology consulting expertise while generating qualified leads for their B2B services.
+                As JF Consulting expanded its client base, the original website lacked the polish and usability needed to support professional credibility and client onboarding. The site needed a modern design, clear structure, and easy access to services for both new and returning clients.
                 </p>
                 <p className="text-brand-graphite leading-relaxed">
-                  The challenge was creating a platform that would establish credibility, showcase their comprehensive service offerings, and convert visitors into potential clients across various business sizes.
+                The goal was to design a clean, trustworthy digital experience that made it simple to learn about services, get in touch, and access key resources—while setting the foundation for future growth.
                 </p>
               </div>
               <div>
                 <h2 className="text-3xl font-bold text-brand-charcoal mb-6">The Solution</h2>
                 <p className="text-brand-graphite leading-relaxed mb-6">
-                  Built a modern, conversion-focused website with detailed service pages, client testimonials, and an integrated lead generation system. The design emphasizes trust and expertise through professional visuals and clear value propositions.
+                I delivered a fully redesigned website with custom page templates, mobile responsiveness, and a streamlined layout tailored to JF Consulting’s brand and audience.
+                </p>
+                <p className="text-brand-graphite leading-relaxed mb-6">
+                Each section was thoughtfully structured to guide users through the firm’s offerings, with intuitive navigation and clear calls to action. The development phase focused on performance, ease of maintenance, and client-ready functionality.
                 </p>
                 <p className="text-brand-graphite leading-relaxed">
-                  Implemented advanced SEO strategies and marketing automation to drive qualified traffic and nurture leads through the sales funnel.
+                The result is a professional, future-ready website that builds trust, improves usability, and supports the firm’s continued growth.
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Results */}
-        <section className="py-16 lg:py-24 bg-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl lg:text-4xl font-bold text-brand-charcoal mb-6">
-                Project Results
-              </h2>
-              <p className="text-lg text-brand-graphite max-w-2xl mx-auto">
-                The new platform significantly improved lead generation and established X-Centric as a trusted technology partner.
-              </p>
-            </div>
-            
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="text-center">
-                <div className="text-4xl font-bold text-brand-blue mb-2">150%</div>
-                <p className="text-brand-graphite">Increase in qualified leads</p>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl font-bold text-brand-blue mb-2">40%</div>
-                <p className="text-brand-graphite">Higher conversion rate</p>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl font-bold text-brand-blue mb-2">65%</div>
-                <p className="text-brand-graphite">Improved organic traffic</p>
-              </div>
-            </div>
-          </div>
-        </section>
+        {/* Project Image */}
+        <div className="flex justify-center my-12">
+          <img 
+            src="/JFCO-Site-layouts-display.jpg" 
+            alt="Xora site layouts display" 
+            className="max-w-full h-auto w-full md:w-3/4 lg:w-1/2 object-contain"
+          />
+        </div>
 
         {/* CTA */}
         <section className="py-16 bg-gray-50">

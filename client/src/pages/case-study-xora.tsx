@@ -101,7 +101,7 @@ export default function CaseStudyXora() {
               <div>
                 <h2 className="text-3xl font-bold text-brand-charcoal mb-6">The Solution</h2>
                 <p className="text-brand-graphite leading-relaxed mb-6">
-                We designed and developed a high-performance React landing page with conversion-focused UX, custom animations, and a modern aesthetic that reflects Xora's innovative brand.
+                I designed and developed a high-performance React landing page with conversion-focused UX, custom animations, and a modern aesthetic that reflects Xora's innovative brand.
                 </p>
                 <p className="text-brand-graphite leading-relaxed">
 The site features SEO-optimized architecture, smooth scroll interactions, and mobile responsiveness—delivering a seamless experience across devices and setting the stage for future AI integrations.

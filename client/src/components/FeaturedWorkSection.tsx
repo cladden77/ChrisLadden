@@ -22,23 +22,20 @@ export default function FeaturedWorkSection() {
       id: 1,
       title: "Xora",
       description: "Xora is an AI-driven SaaS platform that needed a sleek, high-converting landing page to showcase its advanced tech and attract early adopters.",
-      tags: ["Web Design & Development"],
       image: "/xora-mockup.jpg",
       link: "/case-study/xora"
     },
     {
       id: 2,
-      title: "X-Centric™",
-      description: "X-Centric provides technology consultations, implementation, and support services tailored to businesses of all sizes.",
-      tags: ["Web Design & Development", "Digital Marketing"],
-      gradient: "from-gray-800 to-gray-900",
-      link: "/case-study/xcentric"
+      title: "JF Consulting",
+      description: "JF Consulting is a growing tax and bookkeeping firm that needed a modern, easy-to-navigate website to support client growth and streamline service access for both new and existing customers.",
+      image: "/jfconsulting-mockup.jpg",
+      link: "/case-study/jfconsulting"
     },
     {
       id: 3,
       title: "VibeCorp™",
       description: "A modern corporate website showcasing innovative business solutions with cutting-edge design.",
-      tags: ["Brand Design", "Web Development"],
       gradient: "from-purple-600 to-blue-700",
       link: "/case-study/vibecorp"
     },
@@ -46,7 +43,6 @@ export default function FeaturedWorkSection() {
       id: 4,
       title: "TechFlow™",
       description: "Enterprise software solution designed to streamline workflow management and boost productivity.",
-      tags: ["UI/UX Design", "Full-Stack Development"],
       gradient: "from-emerald-500 to-teal-600",
       link: "/case-study/techflow"
     }
@@ -95,14 +91,6 @@ export default function FeaturedWorkSection() {
                   <div className="h-64 relative overflow-hidden">
                     <img src={project.image} alt={project.title + ' mockup'} className="object-cover w-full h-full" />
                     <div className="absolute top-4 left-4 flex flex-wrap gap-2">
-                      {project.tags.map((tag, index) => (
-                        <span
-                          key={index}
-                          className="px-3 py-1 bg-black/20 backdrop-blur-sm text-white text-xs rounded-full"
-                        >
-                          {tag}
-                        </span>
-                      ))}
                     </div>
                     <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300"></div>
                     <div className="absolute bottom-4 left-4 right-4">
@@ -114,14 +102,6 @@ export default function FeaturedWorkSection() {
                 ) : (
                   <div className={`h-64 bg-gradient-to-br ${project.gradient} relative overflow-hidden`}>
                     <div className="absolute top-4 left-4 flex flex-wrap gap-2">
-                      {project.tags.map((tag, index) => (
-                        <span
-                          key={index}
-                          className="px-3 py-1 bg-black/20 backdrop-blur-sm text-white text-xs rounded-full"
-                        >
-                          {tag}
-                        </span>
-                      ))}
                     </div>
                     <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300"></div>
                     <div className="absolute bottom-4 left-4 right-4">
