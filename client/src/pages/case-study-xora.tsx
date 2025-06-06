@@ -34,10 +34,15 @@ export default function CaseStudyXora() {
                 Xora is an AI-driven SaaS platform that needed a sleek, high-converting landing page to showcase its advanced tech and attract early adopters.
                 </p>
                 <div className="flex flex-wrap gap-4">
-                  <button className="inline-flex items-center px-6 py-3 bg-brand-blue text-white font-semibold rounded-lg hover:bg-brand-deep-blue transition-colors duration-200">
+                  <a
+                    href="https://github.com/cladden77/react-saas"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center px-6 py-3 bg-brand-blue text-white font-semibold rounded-lg hover:bg-brand-deep-blue transition-colors duration-200"
+                  >
                     View Live Site
                     <ExternalLink className="ml-2 w-4 h-4" />
-                  </button>
+                  </a>
                 </div>
               </div>
               <div className="order-first lg:order-last">
