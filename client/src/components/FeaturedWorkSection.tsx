@@ -34,6 +34,20 @@ export default function FeaturedWorkSection() {
     },
     {
       id: 3,
+      title: "Seasons Performance",
+      description: "Seasons Performance is a custom JDM automotive shop that needed bold, street-ready apparel to reflect its performance-driven culture and connect with its enthusiast community.",
+      image: "/seasons-1-back.png",
+      link: "/case-study/seasons"
+    },
+    {
+      id: 4,
+      title: "United Real Estate Group",
+      description: "United Real Estate Group is a fast-growing real estate company that needed a cohesive brand identity, marketing materials, and signage to establish a polished, professional presence across every client touchpoint.",
+      image: "/united-real-estate-group-mockup.jpg",
+      link: "/case-study/unitedrealestategroup"
+    },
+    {
+      id: 5,
       title: "ShareArizona",
       description: "ShareArizona is a real estate platform based in Northern Arizona, built to connect landowners with buyers through a clean brand identity and a dynamic, listing-ready website.",
       image: "/ShareArizona-Mockup.jpg",
@@ -43,7 +57,7 @@ export default function FeaturedWorkSection() {
 
   return (
     <section id="work" className="pt-16 lg:pt-24 pb-8 lg:pb-20 bg-blue-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-0">
         <div className="flex justify-between items-center mb-12">
           <div>
             <h2 className="text-3xl lg:text-4xl font-bold text-brand-charcoal mb-4">
@@ -71,15 +85,15 @@ export default function FeaturedWorkSection() {
 
         <div 
           ref={scrollContainerRef}
-          className="flex gap-6 overflow-x-auto scrollbar-hide pb-4"
+          className="flex gap-6 overflow-x-auto scrollbar-hide pb-4 pr-16"
         >
-          {projects.map((project) => (
+          {projects.map((project, idx) => (
             <Link key={project.id} href={project.link} onClick={() => {
               setTimeout(() => {
                 window.scrollTo({ top: 0, behavior: 'auto' });
               }, 0);
             }}>
-              <div className="flex-none w-80 sm:w-96 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group cursor-pointer">
+              <div className={`flex-none w-80 sm:w-96 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group cursor-pointer flex flex-col min-h-[28rem]${idx === projects.length - 1 ? ' mr-[-4rem]' : ''}`}>
                 {project.image ? (
                   <div className="h-64 relative overflow-hidden">
                     <img src={project.image} alt={project.title + ' mockup'} className="object-cover w-full h-full" />
@@ -104,8 +118,8 @@ export default function FeaturedWorkSection() {
                     </div>
                   </div>
                 )}
-                <div className="p-6">
-                  <p className="text-brand-graphite leading-relaxed">
+                <div className="p-6 flex-1 flex flex-col justify-between">
+                  <p className="text-brand-graphite leading-relaxed mb-0">
                     {project.description}
                   </p>
                 </div>
