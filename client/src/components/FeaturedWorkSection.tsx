@@ -41,6 +41,13 @@ export default function FeaturedWorkSection() {
     },
     {
       id: 4,
+      title: "United Real Estate Group",
+      description: "United Real Estate Group is a fast-growing real estate company that needed a cohesive brand identity, marketing materials, and signage to establish a polished, professional presence across every client touchpoint.",
+      image: "/united-real-estate-group-mockup.jpg",
+      link: "/case-study/unitedrealestategroup"
+    },
+    {
+      id: 5,
       title: "ShareArizona",
       description: "ShareArizona is a real estate platform based in Northern Arizona, built to connect landowners with buyers through a clean brand identity and a dynamic, listing-ready website.",
       image: "/ShareArizona-Mockup.jpg",

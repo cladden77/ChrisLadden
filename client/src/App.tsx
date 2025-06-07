@@ -11,6 +11,7 @@ import CaseStudyShareArizona from "@/pages/case-study-sharearizona";
 import CaseStudySeasons from "./pages/case-study-seasons";
 import ThankYou from "@/pages/thank-you";
 import NotFound from "@/pages/not-found";
+import CaseStudyUnitedRealEstateGroup from "./pages/case-study-united-real-estate-group";
 
 
 function Router() {
@@ -23,6 +24,7 @@ function Router() {
       <Route path="/case-study/jfconsulting" component={CaseStudyJfConsulting} />
       <Route path="/case-study/sharearizona" component={CaseStudyShareArizona} />
       <Route path="/case-study/seasons" component={CaseStudySeasons} />
+      <Route path="/case-study/unitedrealestategroup" component={CaseStudyUnitedRealEstateGroup} />
       <Route component={NotFound} />
     </Switch>
   );
