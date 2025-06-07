@@ -8,8 +8,10 @@ import Contact from "@/pages/contact";
 import CaseStudyXora from "@/pages/case-study-xora";
 import CaseStudyJfConsulting from "@/pages/case-study-jfconsulting";
 import CaseStudyShareArizona from "@/pages/case-study-sharearizona";
+import CaseStudySeasons from "./pages/case-study-seasons";
 import ThankYou from "@/pages/thank-you";
 import NotFound from "@/pages/not-found";
+
 
 function Router() {
   return (
@@ -20,6 +22,7 @@ function Router() {
       <Route path="/case-study/xora" component={CaseStudyXora} />
       <Route path="/case-study/jfconsulting" component={CaseStudyJfConsulting} />
       <Route path="/case-study/sharearizona" component={CaseStudyShareArizona} />
+      <Route path="/case-study/seasons" component={CaseStudySeasons} />
       <Route component={NotFound} />
     </Switch>
   );

@@ -34,10 +34,10 @@ export default function FeaturedWorkSection() {
     },
     {
       id: 3,
-      title: "ShareArizona",
-      description: "ShareArizona is a real estate platform based in Northern Arizona, built to connect landowners with buyers through a clean brand identity and a dynamic, listing-ready website.",
-      image: "/ShareArizona-Mockup.jpg",
-      link: "/case-study/sharearizona"
+      title: "Seasons Performance",
+      description: "Seasons Performance is a custom JDM automotive shop that needed bold, street-ready apparel to reflect its performance-driven culture and connect with its enthusiast community.",
+      image: "/seasons-1-back.png",
+      link: "/case-study/seasons"
     },
     {
       id: 4,
