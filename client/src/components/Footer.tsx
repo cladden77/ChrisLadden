@@ -1,4 +1,4 @@
-import { Instagram, Twitter, Linkedin } from "lucide-react";
+import { Instagram, Linkedin } from "lucide-react";
 import whiteLogo from "@assets/chrisladden-logo-white.png";
 
 export default function Footer() {
@@ -6,8 +6,7 @@ export default function Footer() {
 
   const socialLinks = [
     { icon: <Instagram className="w-5 h-5" />, href: "https://instagram.com/chrisladden", label: "Instagram" },
-    { icon: <Twitter className="w-5 h-5" />, href: "https://twitter.com/chrisladden", label: "Twitter" },
-    { icon: <Linkedin className="w-5 h-5" />, href: "https://linkedin.com/in/chrisladden", label: "LinkedIn" }
+    { icon: <Linkedin className="w-5 h-5" />, href: "https://www.linkedin.com/in/chris-ladden", label: "LinkedIn" }
   ];
 
   return (
